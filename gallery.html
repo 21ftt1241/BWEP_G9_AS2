@@ -10,13 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <!-- Animate CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
-  <!--Popup Lightbox Js-->
-  <script src="js/jquery.popup.lightbox.js"></script>
-  <!--Popup Lightbox CSS-->
-  <link href="css/popup-lightbox.css" rel="stylesheet" />
-
+  <!-- lightbox -->
+  <link rel="stylesheet" type="text/css" href="css/simple-lightbox.css">
  <style>
     #banner {
       width: 100%;}
@@ -33,51 +28,36 @@
       margin-left: 10px;
       margin-right: 10px;}
 
-    body {
-      background-color: #fcd152;}
+    body {background-color: #fcd152;}
 
-    .gallery-container{ 
-      margin: 150px auto;
-      max-width: 960px; 
-      text-align: center;}
+    .gallery-container{
+      max-width: 80%;
+      text-align: center;
+      margin: auto;}
 
-    .img-container{
-      margin: 20px;}
+    .gallery a img {
+      width: 270px;
+      height: 180px;
+      margin: 5px;
+      border: 2px solid #fff;
+      -webkit-transition: -webkit-transform .15s ease;
+      -moz-transition: -moz-transform .15s ease;
+      -o-transition: -o-transform .15s ease;
+      -ms-transition: -ms-transform .15s ease;
+      transition: transform .15s ease;
+      position: relative;}
 
-    .img-container img{
-      width: 200px;
-      height: auto;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
-      transition: .3s;
-      -webkit-transition: .3s;
-      -moz-transition: .3s;}
+    .clear {
+      clear: both;}
 
-    .img-container img:hover{
-      transform: scale(0.97);
-      -webkit-transform: scale(0.97);
-      -moz-transform: scale(0.97);
-      -o-transform: scale(0.97);
-      opacity: 0.75;
-      -webkit-opacity: 0.75;
-      -moz-opacity: 0.75;
-      transition: .3s;
-      -webkit-transition: .3s;
-      -moz-transition: .3s;}
-  </style>
-  <script>
-         $(document).ready(function(){
+    a {
+      color: #009688;
+      text-decoration: none;}
 
-         $(".img-container").popupLightbox({
-          width: 600,
-      height: 450
-         });
-
-
-         });
-  </script>
+    a:hover {
+      color: #01695f;
+      text-decoration: none;}
+   </style>
 </head>
 <body>
 
@@ -121,37 +101,26 @@
   </div>
 </div>
 
-<!-- <div id="banner">
-  <img src="images/landingpage.png" id="banner" class="img-fluid" alt="...">
-</div> -->
-</nav>
-
-<!-- Gallery -->
 <div class="gallery-container">
-  <h1>Gallery</h1>
-    <div class="img-container">
-      <img src="images/Temburong/t-1.jpg" alt="Temburong 1"/>
-      <img src="images/Temburong/t-2.jpg" alt="Temburong 3"/>
-      <img src="images/Temburong/t-3.jpg" alt="Temburong 3"/>
-      <img src="images/Temburong/t-4.jpg" alt="Pekan Bangar"/>
-      <img src="images/Temburong/t-5.jpg" alt="Pekan Bangar"/>
-      <img src="images/Temburong/t-6.jpg" alt="Pekan Bangar"/>
+    <h1 class="title">Gallery</h1>
+    <div class="gallery">
+        <a href="images/Temburong/t-1.jpg" class="big"><img src="images/Temburong/t-1.jpg" alt="" title="Insert Caption here" /></a>
+        <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Caption here"/></a>
+        <a href="images/Temburong/t-3.jpg"><img src="images/Temburong/t-6.jpg" alt="" title="Caption here"/></a>
+        <a href="images/Temburong/t-6.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="Caption Here"/></a>
+        <div class="clear"></div>
     </div>
+
 </div>
+<script src="js/simple-lightbox.js"></script>
+<script>
+    (function() {
+        var $gallery = new SimpleLightbox('.gallery a', {
+
+        });
+    })();
+</script>
+
 
 </body>
-<!-- Gallery Script -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </html>
