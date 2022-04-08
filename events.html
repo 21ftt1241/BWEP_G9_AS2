@@ -23,13 +23,21 @@
       padding-bottom: 20px;
     }
 
-    li{
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
     body {
       background-color: #fcd152;
+    }
+    .card-container {
+      padding: 10px;}
+
+    .card{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80%;
+      margin-bottom: 10px;
+    }
+    .search-row{
+      margin: auto;
+      max-width: 70%;
     }
   </style>
 </head>
@@ -75,11 +83,77 @@
   </div>
 </div>
 
+<div class="container card-container">
+  <div class="row search-row">
+    <div class="card card-body search-body">
+        <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for event here">
+    </div>
+  </div>
+  <br>
+  <div class="row" id="myItems">
+    <div class="col-sm-12 mb-3">
 
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Event 1</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1, Outdoor, Brunei Muara</h6>
+          <p class="card-text">Some text.</p>
+        </div>
+      </div>
 
-<div class="mt-4 p-3 bg-dark text-white text-center fixed-bottom">
-  <p>Footer</p>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Event 2</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1, Indoor, Belait</h6>
+          <p class="card-text">Some text.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Event 3<a ></a></h5>
+          <h6 class="card-subtitle mb-2 text-muted">Tags: Week 2, Outdoor Belait</h6>
+          <p class="card-text">Some text.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Event 4</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Tags: Week 4, Temburong, Outdoor</h6>
+          <p class="card-text">Some text.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Event 5</a></h5>
+          <h6 class="card-subtitle mb-2 text-muted">Tags: Week 5, Brunei Muara, Indoor</h6>
+          <p class="card-text">Some text.</p>
+        </div>
+      </div>
+
+        </div>
+      </div>      
+    </div>    
+  </div>
 </div>
-
+<script type="text/javascript">
+  function myFunction() {
+    var input, filter, cards, cardContainer, h6, title, i;
+    input = document.getElementById("myFilter");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("myItems");
+    cards = cardContainer.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".card-body h6.card-subtitle");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+</script>
 </body>
 </html>
