@@ -33,135 +33,164 @@
     .card-container {
       padding: 10px;}
 
-    .card{
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 85%;
-      margin-bottom: 0px;
-    }
-    .search-row{
-      margin: auto;
-      max-width: 70%;
-    }
-  </style>
-</head>
-<body>
+      .card{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 85%;
+        margin-bottom: 0px;
+      }
+      .search-row{
+        margin: auto;
+        max-width: 70%;
+      }
+      .btn-warning{
+        width: 100%;
+      }
+      .img-thumbnail{
+        max-width: 50%;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
 
-<!-- Navbar -->
-<div class="sticky-top" >
-  <div class="container nvbar sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="images/icon.png" alt="" width="50px" height="50px">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="events.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="poi.html">Points of Interest</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+    <!-- Navbar -->
+    <div class="sticky-top" >
+      <div class="container nvbar sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/icon.png" alt="" width="50px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="poi.html">Points of Interest</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
 
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
-    </nav>
-  </div>
-</div>
 
-<!-- card -->
-<div class="container card-container">
-  <div class="row search-row mb-3">
-    <div class="card card-body search-body">
-        <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for event here">
-    </div>
-  </div>
-<div class="row" id="myItems">
-  <div id="accordion">
-    <div class="card">
-      <div class="card-body" id="body1">
-        <h5 class="card-title">Event 1</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Outdoor , Brunei Muara</h6>
-        <button class="btn btn-link mt-2" data-toggle="collapse" data-target = "#collapse1" aria-expanded="false" aria-controls="collapse1">Show More</button>
-      </div>
-    <div id="collapse1" class="collapse show" aria-labelledby="body1" data-parent="#accordion">
-      <div class="card-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta placeat porro, beatae quia ut dolor at sequi. Blanditiis fugiat, architecto temporibus quae, neque repellendus repudiandae amet non adipisci perferendis assumenda.</p>
-      </div>
-    </div>
-  </div>  
-
-    <div class="card">
-      <div class="card-body" id="body2">
-        <h5 class="card-title">Event 2</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Indoor , Belait</h6>
-        <button class="btn btn-link mt-2" data-toggle="collapse" data-target = "#collapse2" aria-expanded="false" aria-controls="collapse2">Show More</button>
-      </div>
-      <div id="collapse2" class="collapse show" aria-labelledby="body2" data-parent="#accordion">
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta placeat porro, beatae quia ut dolor at sequi. Blanditiis fugiat, architecto temporibus quae, neque repellendus repudiandae amet non adipisci perferendis assumenda.</p>
+    <!-- card -->
+    <div class="container card-container">
+      <div class="row search-row mb-3">
+        <div class="card card-body search-body">
+          <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for event by tags">
         </div>
       </div>
-    </div>
+      <div class="row" id="myItems">
+        <div id="accordion">
+          <div class="card-deck">
+            <div class="card mb-3">
+              <div class="card-body" id="body1">
+                <h5 class="card-title">Get Fit Marathon Challenge</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Outdoor , Brunei Muara</h6>
+                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse1" data-parent="#accordion">Show More</button>
+              </div>
+              <div id="collapse1" class="accordion-collapse collapse">
+                <div class="card-body">
+                  <img src="images/events/fun-run1.jpg" alt="fun-run" class="img-thumbnail">
+                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                  <p class="card-text">Compete in a series of medium to long-distance marathon in the Brunei December Run 2022. You can choose from beginners 5km fun run , 10km intermediate run and even 42km marathon challenge.</p>
+                  <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                  <p class="card-text">Dec 5, 2022 - Dec 12, 2022 (Except Friday)</p>
+                  <p class="card-text">8am - 10am</p></li>
+                </ul>
+                </div>
+              </div>
+            </div>  
 
-    <div class="card">
-      <div class="card-body" id="body3">
-        <h5 class="card-title">Event 3<a ></a></h5>
-        <h6 class="card-subtitle mb-2 text-muted">Tags: Week 2 , Outdoor , Belait</h6>
-        <button class="btn btn-link mt-2" data-toggle="collapse" data-target = "#collapse3" aria-expanded="false" aria-controls="collapse3">Show More</button>
-      </div>
-      <div id="collapse3" class="collapse show" aria-labelledby="body3" data-parent="#accordion">
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta placeat porro, beatae quia ut dolor at sequi. Blanditiis fugiat, architecto temporibus quae, neque repellendus repudiandae amet non adipisci perferendis assumenda.</p>
+            <div class="card mb-3">
+              <div class="card-body" id="body2">
+                <h5 class="card-title">E-Sport Tournament</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Indoor , Brunei Muara</h6>
+                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse2" data-parent="#accordion">Show More</button>
+              </div>
+              <div id="collapse2" class="accordion-collapse collapse">
+                <div class="card-body">
+                  <img src="images/events/esports.webp" alt="fun-run" class="img-thumbnail">
+                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                  <p class="card-text">This will be the second eSport tournament held by JPCC in collaboration with Game On. This event is open to 13 years old and above with the aim to exploring ways to overcome the limitations of organising such events during COVID-19 restrictions</p>
+                  <p class="card-subtitle"><b>Time</b></p>
+                  <p class="card-text">Dec 5, 2022 - Dec 8, 2022 (Except Friday)</p>
+                  <p class="card-text">2pm - 4pm</p>
+                </div>
+              </div>
+            </div>  
+
+            <div class="card mb-3">
+              <div class="card-body" id="body3">
+                <h5 class="card-title">Get Fit Marathon Challenge</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Outdoor , Brunei Muara</h6>
+                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse3" data-parent="#accordion">Show More</button>
+              </div>
+              <div id="collapse3" class="accordion-collapse collapse">
+                <div class="card-body">
+                  <img src="images/events/fun-run1.jpg" alt="fun-run" class="img-thumbnail">
+                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                  <p class="card-text">Compete in a series of medium to long-distance marathon in the Brunei December Run 2022. You can choose from beginners 5km fun run , 10km intermediate run and even 42km marathon challenge.</p><br>
+                </div>
+              </div>
+            </div>  
+
+            <div class="card mb-3">
+              <div class="card-body" id="body4">
+                <h5 class="card-title">Get Fit Marathon Challenge</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Outdoor , Brunei Muara</h6>
+                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse4" data-parent="#accordion">Show More</button>
+              </div>
+              <div id="collapse4" class="accordion-collapse collapse">
+                <div class="card-body">
+                  <img src="images/events/fun-run1.jpg" alt="fun-run" class="img-thumbnail">
+                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                  <p class="card-text">Compete in a series of medium to long-distance marathon in the Brunei December Run 2022. You can choose from beginners 5km fun run , 10km intermediate run and even 42km marathon challenge.</p><br>
+                </div>
+              </div>
+            </div>  
+
+            <div class="card mb-3">
+              <div class="card-body" id="body5">
+                <h5 class="card-title">Get Fit Marathon Challenge</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Outdoor , Brunei Muara</h6>
+                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse5" data-parent="#accordion">Show More</button>
+              </div>
+              <div id="collapse5" class="accordion-collapse collapse">
+                <div class="card-body">
+                  <img src="images/events/fun-run1.jpg" alt="fun-run" class="img-thumbnail">
+                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                  <p class="card-text">Compete in a series of medium to long-distance marathon in the Brunei December Run 2022. You can choose from beginners 5km fun run , 10km intermediate run and even 42km marathon challenge.</p><br>
+                </div>
+              </div>
+            </div>  
+          </div>
         </div>
       </div>
-    </div>
-      
-    <div class="card">
-      <div class="card-body" id="body4">
-        <h5 class="card-title">Event 4</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Tags: Week 4 , Temburong , Outdoor</h6>
-        <button class="btn btn-link mt-2" data-toggle="collapse" data-target = "#collapse4" aria-expanded="false" aria-controls="collapse4">Show More</button>
-      </div>
-      <div id="collapse4" class="collapse show" aria-labelledby="body4" data-parent="#accordion">
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta placeat porro, beatae quia ut dolor at sequi. Blanditiis fugiat, architecto temporibus quae, neque repellendus repudiandae amet non adipisci perferendis assumenda.</p>
-        </div>
-      </div>
-    </div>
-      
-    <div class="card">
-      <div class="card-body" id="body5">
-        <h5 class="card-title">Event 5</a></h5>
-        <h6 class="card-subtitle mb-2 text-muted">Tags: Week 5, Brunei Muara, Indoor</h6>
-        <button class="btn btn-link mt-2" data-toggle="collapse" data-target = "#collapse5" aria-expanded="false" aria-controls="collapse5">Show More</button>
-      </div>
-      <div id="collapse5" class="collapse show" aria-labelledby="body5" data-parent="#accordion">
-        <div class="card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta placeat porro, beatae quia ut dolor at sequi. Blanditiis fugiat, architecto temporibus quae, neque repellendus repudiandae amet non adipisci perferendis assumenda.</p>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
     </div>
   </div>
 </div>
@@ -174,14 +203,14 @@
     cardContainer = document.getElementById("myItems");
     cards = cardContainer.getElementsByClassName("card");
     for (i = 0; i < cards.length; i++) {
-        title = cards[i].querySelector(".card-body h6.card-subtitle");
-        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
-            cards[i].style.display = "";
-        } else {
-            cards[i].style.display = "none";
-        }
+      title = cards[i].querySelector(".card-body h6.card-subtitle");
+      if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+        cards[i].style.display = "";
+      } else {
+        cards[i].style.display = "none";
+      }
     }
-}
+  }
 </script>
 </body>
 </html>
