@@ -15,7 +15,6 @@
   <style>
     #banner {
       width: 100%;}
-
       .navbar {
         border-radius: 10px;
         width: 100%;}
@@ -102,15 +101,39 @@
                     </div>
 
                     <div class="gallery-container">
-                      <h1 class="title">Gallery - Temburong</h1>
-                      <div class="gallery">
-                        <a href="images/Temburong/t-1.jpg" class="big"><img src="images/Temburong/t-1.jpg" alt="" title="Insert Caption here" /></a>
-                        <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Caption here"/></a>
-                        <a href="images/Temburong/t-3.jpg"><img src="images/Temburong/t-3.jpg" alt="" title="Caption here"/></a>
-                        <a href="images/Temburong/t-4.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="Caption Here"/></a>
-                        <a href="images/Temburong/t-5.jpg"><img src="images/Temburong/t-5.jpg" alt="" title="Caption Here"/></a>
-                        <a href="images/Temburong/t-6.jpg"><img src="images/Temburong/t-6.jpg" alt="" title="Caption Here"/></a>
-                        <a href="images/Temburong/temburong-bridge.jpg"><img src="images/Temburong/temburong-bridge.jpg" alt="" title="Caption Here"/></a>
+                      <h1 class="title">Gallery</h1>
+                      <div align="center">
+                        <button class="btn btn-default filter-button" data-filter="all">All</button>
+                        <button class="btn btn-default filter-button" data-filter="brunei-muara">Brunei-Muara</button>
+                        <button class="btn btn-default filter-button" data-filter="tutong">Tutong</button>
+                        <button class="btn btn-default filter-button" data-filter="belait">Belait</button>
+                        <button class="btn btn-default filter-button" data-filter="temburong">Temburong</button>
+                        <button class="btn btn-default filter-button" data-filter="events">Events</button>
+                      </div>
+
+                      <div class="gallery mb-5">
+                        <!-- Temburong -->
+                        <a href="images/Temburong/t-1.jpg"><img src="images/Temburong/t-1.jpg" alt="" title="Insert Caption here" class="filter temburong" /></a>
+                        <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Caption here" class="filter temburong" /></a>
+                        <a href="images/Temburong/t-4.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="Caption Here" class="filter temburong" /></a>
+                        <a href="images/Temburong/t-5.jpg"><img src="images/Temburong/t-5.jpg" alt="" title="Caption Here" class="filter temburong" /></a>
+                        <!-- Brunei-Muara -->
+                        <a href="images/brunei-muara/ayer.jpg"><img src="images/brunei-muara/ayer.jpg" alt="" title="Insert Caption here" class="filter brunei-muara" /></a>
+                        <a href="images/brunei-muara/eco.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Caption here" class="filter brunei-muara" /></a>
+                        <a href="images/brunei-muara/jp.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Caption Here" class="filter brunei-muara" /></a>
+                        <a href="images/brunei-muara/tasek-lama.jpg"><img src="images/brunei-muara/tasek-lama.jpg" alt="" title="Caption Here" class="filter brunei-muara" /></a>
+                        <!-- Tutong -->
+                        <a href="images/tutong/beach.jpg"><img src="images/tutong/beach.jpg" alt="" title="Caption here" class="filter tutong" /></a>
+                        <a href="images/tutong/lake.jpg"><img src="images/tutong/lake.jpg" alt="" title="Caption Here" class="filter tutong" /></a>
+                        <a href="images/tutong/thursday-market.jpg"><img src="images/tutong/thursday-market.jpg" alt="" title="Caption Here" class="filter tutong" /></a>
+                        <!-- Belait -->
+                        <a href="images/belait/anduki-park.jpg"><img src="images/belait/anduki-park.jpg" alt="" title="Caption here" class="filter belait" /></a>
+                        <a href="images/belait/luagan.jpg"><img src="images/belait/luagan.jpg" alt="" title="Caption Here" class="filter belait" /></a>
+                        <a href="images/belait/monument.jpg"><img src="images/belait/monument.jpg" alt="" title="Caption Here" class="filter belait" /></a>
+                        <!-- Events -->
+                        <a href="images/Events/coding-3.jpg"><img src="images/Events/coding-3.jpg" alt="" title="Caption here" class="filter events belait" /></a>
+                        <a href="images/Events/esports.webp"><img src="images/Events/esports.webp" alt="" title="Caption Here" class="filter events brunei-muara" /></a>
+                        <a href="images/Events/fun-run1.jpg"><img src="images/Events/fun-run1.jpg" alt="" title="Caption Here" class="filter events brunei-muara" /></a>
                         <div class="clear"></div>
                       </div>
 
@@ -123,7 +146,33 @@
                         });
                       })();
                     </script>
+                    <script type="text/javascript">
+                      $(document).ready(function(){
 
+                        $(".filter-button").click(function(){
+                          var value = $(this).attr('data-filter');
+
+                          if(value == "all")
+                          {
+
+                            $('.filter').show('1000');
+                          }
+                          else
+                          {
+
+                            $(".filter").not('.'+value).hide('3000');
+                            $('.filter').filter('.'+value).show('3000');
+
+                          }
+                        });
+
+                        if ($(".filter-button").removeClass("active")) {
+                          $(this).removeClass("active");
+                        }
+                        $(this).addClass("active");
+
+                      });
+                    </script>
 
                   </body>
                   </html>
