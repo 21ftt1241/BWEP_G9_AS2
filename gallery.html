@@ -12,115 +12,118 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- lightbox -->
   <link rel="stylesheet" type="text/css" href="css/simple-lightbox.css">
- <style>
+  <style>
     #banner {
       width: 100%;}
 
-    .navbar {
-      border-radius: 10px;
-      width: 100%;}
+      .navbar {
+        border-radius: 10px;
+        width: 100%;}
 
-    .nvbar {
-      padding-top: 20px;
-      padding-bottom: 20px;}
+        .nvbar {
+          padding-top: 20px;
+          padding-bottom: 20px;}
 
-    li{
-      margin-left: 10px;
-      margin-right: 10px;}
+          li{
+            margin-left: 10px;
+            margin-right: 10px;}
 
-    body {background-color: #fcd152;}
+            body {background-color: #fcd152;}
 
-    .gallery-container{
-      max-width: 80%;
-      text-align: center;
-      margin: auto;}
+            .gallery-container{
+              max-width: 80%;
+              text-align: center;
+              margin: auto;}
 
-    .gallery a img {
-      width: 270px;
-      height: 180px;
-      margin: 5px;
-      border: 2px solid #fff;
-      -webkit-transition: -webkit-transform .15s ease;
-      -moz-transition: -moz-transform .15s ease;
-      -o-transition: -o-transform .15s ease;
-      -ms-transition: -ms-transform .15s ease;
-      transition: transform .15s ease;
-      position: relative;}
+              .gallery a img {
+                width: 270px;
+                height: 180px;
+                margin: 5px;
+                border: 2px solid #fff;
+                -webkit-transition: -webkit-transform .15s ease;
+                -moz-transition: -moz-transform .15s ease;
+                -o-transition: -o-transform .15s ease;
+                -ms-transition: -ms-transform .15s ease;
+                transition: transform .15s ease;
+                position: relative;}
 
-    .clear {
-      clear: both;}
+                .clear {
+                  clear: both;}
 
-    a {
-      color: #009688;
-      text-decoration: none;}
+                  a {
+                    color: #009688;
+                    text-decoration: none;}
 
-    a:hover {
-      color: #01695f;
-      text-decoration: none;}
-   </style>
-</head>
-<body>
+                    a:hover {
+                      color: #01695f;
+                      text-decoration: none;}
+                    </style>
+                  </head>
+                  <body>
 
-<!-- Navbar -->
-<div class="sticky-top" >
-  <div class="container nvbar sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="images/icon.png" alt="" width="50px" height="50px">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="poi.html">Points of Interest</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+                    <!-- Navbar -->
+                    <div class="sticky-top" >
+                      <div class="container nvbar sticky-top">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                          <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                              <img src="images/icon.png" alt="" width="50px" height="50px">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="events.html">Events</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="poi.html">Points of Interest</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
 
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-    </nav>
-  </div>
-</div>
+                              </ul>
+                              <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
 
-<div class="gallery-container">
-    <h1 class="title">Gallery</h1>
-    <div class="gallery">
-        <a href="images/Temburong/t-1.jpg" class="big"><img src="images/Temburong/t-1.jpg" alt="" title="Insert Caption here" /></a>
-        <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Caption here"/></a>
-        <a href="images/Temburong/t-3.jpg"><img src="images/Temburong/t-6.jpg" alt="" title="Caption here"/></a>
-        <a href="images/Temburong/t-6.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="Caption Here"/></a>
-        <div class="clear"></div>
-    </div>
+                    <div class="gallery-container">
+                      <h1 class="title">Gallery - Temburong</h1>
+                      <div class="gallery">
+                        <a href="images/Temburong/t-1.jpg" class="big"><img src="images/Temburong/t-1.jpg" alt="" title="Insert Caption here" /></a>
+                        <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Caption here"/></a>
+                        <a href="images/Temburong/t-3.jpg"><img src="images/Temburong/t-3.jpg" alt="" title="Caption here"/></a>
+                        <a href="images/Temburong/t-4.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="Caption Here"/></a>
+                        <a href="images/Temburong/t-5.jpg"><img src="images/Temburong/t-5.jpg" alt="" title="Caption Here"/></a>
+                        <a href="images/Temburong/t-6.jpg"><img src="images/Temburong/t-6.jpg" alt="" title="Caption Here"/></a>
+                        <a href="images/Temburong/temburong-bridge.jpg"><img src="images/Temburong/temburong-bridge.jpg" alt="" title="Caption Here"/></a>
+                        <div class="clear"></div>
+                      </div>
 
-</div>
-<script src="js/simple-lightbox.js"></script>
-<script>
-    (function() {
-        var $gallery = new SimpleLightbox('.gallery a', {
-          close: true,
-        });
-    })();
-</script>
+                    </div>
+                    <script src="js/simple-lightbox.js"></script>
+                    <script>
+                      (function() {
+                        var $gallery = new SimpleLightbox('.gallery a', {
+                          close: true,
+                        });
+                      })();
+                    </script>
 
 
-</body>
-</html>
+                  </body>
+                  </html>
