@@ -56,123 +56,134 @@
                     a:hover {
                       color: #01695f;
                       text-decoration: none;}
-                    </style>
-                  </head>
-                  <body>
 
-                    <!-- Navbar -->
-                    <div class="sticky-top" >
-                      <div class="container nvbar sticky-top">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-                          <div class="container-fluid">
-                            <a class="navbar-brand" href="#">
-                              <img src="images/icon.png" alt="" width="50px" height="50px">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="events.html">Events</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link active" href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="poi.html">Points of Interest</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-
-                              </ul>
-                              <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                              </form>
-                            </div>
-                          </div>
-                        </nav>
-                      </div>
-                    </div>
-
-                    <div class="gallery-container">
-                      <h1 class="title">Gallery</h1>
-                      <div align="center">
-                        <button class="btn btn-default filter-button" data-filter="all">All</button>
-                        <button class="btn btn-default filter-button" data-filter="brunei-muara">Brunei-Muara</button>
-                        <button class="btn btn-default filter-button" data-filter="tutong">Tutong</button>
-                        <button class="btn btn-default filter-button" data-filter="belait">Belait</button>
-                        <button class="btn btn-default filter-button" data-filter="temburong">Temburong</button>
-                        <button class="btn btn-default filter-button" data-filter="events">Events</button>
-                      </div>
-
-                      <div class="gallery mb-5">
-                        <!-- Temburong -->
-                        <a href="images/Temburong/t-1.jpg"><img src="images/Temburong/t-1.jpg" alt="" title="Insert Caption here" class="filter temburong" /></a>
-                        <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Caption here" class="filter temburong" /></a>
-                        <a href="images/Temburong/t-4.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="Caption Here" class="filter temburong" /></a>
-                        <a href="images/Temburong/t-5.jpg"><img src="images/Temburong/t-5.jpg" alt="" title="Caption Here" class="filter temburong" /></a>
-                        <!-- Brunei-Muara -->
-                        <a href="images/brunei-muara/ayer.jpg"><img src="images/brunei-muara/ayer.jpg" alt="" title="Insert Caption here" class="filter brunei-muara" /></a>
-                        <a href="images/brunei-muara/eco.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Caption here" class="filter brunei-muara" /></a>
-                        <a href="images/brunei-muara/jp.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Caption Here" class="filter brunei-muara" /></a>
-                        <a href="images/brunei-muara/tasek-lama.jpg"><img src="images/brunei-muara/tasek-lama.jpg" alt="" title="Caption Here" class="filter brunei-muara" /></a>
-                        <!-- Tutong -->
-                        <a href="images/tutong/beach.jpg"><img src="images/tutong/beach.jpg" alt="" title="Caption here" class="filter tutong" /></a>
-                        <a href="images/tutong/lake.jpg"><img src="images/tutong/lake.jpg" alt="" title="Caption Here" class="filter tutong" /></a>
-                        <a href="images/tutong/thursday-market.jpg"><img src="images/tutong/thursday-market.jpg" alt="" title="Caption Here" class="filter tutong" /></a>
-                        <!-- Belait -->
-                        <a href="images/belait/anduki-park.jpg"><img src="images/belait/anduki-park.jpg" alt="" title="Caption here" class="filter belait" /></a>
-                        <a href="images/belait/luagan.jpg"><img src="images/belait/luagan.jpg" alt="" title="Caption Here" class="filter belait" /></a>
-                        <a href="images/belait/monument.jpg"><img src="images/belait/monument.jpg" alt="" title="Caption Here" class="filter belait" /></a>
-                        <!-- Events -->
-                        <a href="images/Events/coding-3.jpg"><img src="images/Events/coding-3.jpg" alt="" title="Caption here" class="filter events belait" /></a>
-                        <a href="images/Events/esports.webp"><img src="images/Events/esports.webp" alt="" title="Caption Here" class="filter events brunei-muara" /></a>
-                        <a href="images/Events/fun-run1.jpg"><img src="images/Events/fun-run1.jpg" alt="" title="Caption Here" class="filter events brunei-muara" /></a>
-                        <div class="clear"></div>
-                      </div>
-
-                    </div>
-                    <script src="js/simple-lightbox.js"></script>
-                    <script>
-                      (function() {
-                        var $gallery = new SimpleLightbox('.gallery a', {
-                          close: true,
-                        });
-                      })();
-                    </script>
-                    <script type="text/javascript">
-                      $(document).ready(function(){
-
-                        $(".filter-button").click(function(){
-                          var value = $(this).attr('data-filter');
-
-                          if(value == "all")
-                          {
-
-                            $('.filter').show('1000');
-                          }
-                          else
-                          {
-
-                            $(".filter").not('.'+value).hide('3000');
-                            $('.filter').filter('.'+value).show('3000');
-
-                          }
-                        });
-
-                        if ($(".filter-button").removeClass("active")) {
-                          $(this).removeClass("active");
+                      .card{
+                        max-width: 90%px;
+                        margin: auto;}
+                        .card-title{
+                          margin: 15px;
                         }
-                        $(this).addClass("active");
+                        .btn-warning{
+                          margin: 10px 5px;
+                        }
+                      </style>
+                    </head>
+                    <body>
 
-                      });
-                    </script>
+                      <!-- Navbar -->
+                      <div class="sticky-top" >
+                        <div class="container nvbar sticky-top">
+                          <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                            <div class="container-fluid">
+                              <a class="navbar-brand" href="#">
+                                <img src="images/icon.png" alt="" width="50px" height="50px">
+                              </a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                  <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="events.html">Events</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="gallery.html">Gallery</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="poi.html">Points of Interest</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                  </li>
 
-                  </body>
-                  </html>
+                                </ul>
+                                <form class="d-flex">
+                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                  <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                              </div>
+                            </div>
+                          </nav>
+                        </div>
+                      </div>
+
+                      <div class="gallery-container">
+                        <div class="card mb-3">
+                          <!-- <h1 class="card-title">Gallery</h1> -->
+                          <div align="center">
+                            <button class="btn btn-warning filter-button" data-filter="all">All</button>
+                            <button class="btn btn-warning filter-button" data-filter="brunei-muara">Brunei-Muara</button>
+                            <button class="btn btn-warning  filter-button" data-filter="tutong">Tutong</button>
+                            <button class="btn btn-warning  filter-button" data-filter="belait">Belait</button>
+                            <button class="btn btn-warning filter-button" data-filter="temburong">Temburong</button>
+                            <button class="btn btn-warning  filter-button" data-filter="events">Events</button>
+                          </div>
+                        </div>
+                        <div class="gallery mb-5">
+                          <!-- Temburong -->
+                          <a href="images/Temburong/t-1.jpg"><img src="images/Temburong/t-1.jpg" alt="" title="Insert Caption here" class="filter temburong" /></a>
+                          <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Caption here" class="filter temburong" /></a>
+                          <a href="images/Temburong/t-4.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="Caption Here" class="filter temburong" /></a>
+                          <a href="images/Temburong/t-5.jpg"><img src="images/Temburong/t-5.jpg" alt="" title="Caption Here" class="filter temburong" /></a>
+                          <!-- Brunei-Muara -->
+                          <a href="images/brunei-muara/ayer.jpg"><img src="images/brunei-muara/ayer.jpg" alt="" title="Insert Caption here" class="filter brunei-muara" /></a>
+                          <a href="images/brunei-muara/eco.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Caption here" class="filter brunei-muara" /></a>
+                          <a href="images/brunei-muara/jp.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Caption Here" class="filter brunei-muara" /></a>
+                          <a href="images/brunei-muara/tasek-lama.jpg"><img src="images/brunei-muara/tasek-lama.jpg" alt="" title="Caption Here" class="filter brunei-muara" /></a>
+                          <!-- Tutong -->
+                          <a href="images/tutong/beach.jpg"><img src="images/tutong/beach.jpg" alt="" title="Caption here" class="filter tutong" /></a>
+                          <a href="images/tutong/lake.jpg"><img src="images/tutong/lake.jpg" alt="" title="Caption Here" class="filter tutong" /></a>
+                          <a href="images/tutong/thursday-market.jpg"><img src="images/tutong/thursday-market.jpg" alt="" title="Caption Here" class="filter tutong" /></a>
+                          <!-- Belait -->
+                          <a href="images/belait/anduki-park.jpg"><img src="images/belait/anduki-park.jpg" alt="" title="Caption here" class="filter belait" /></a>
+                          <a href="images/belait/luagan.jpg"><img src="images/belait/luagan.jpg" alt="" title="Caption Here" class="filter belait" /></a>
+                          <a href="images/belait/monument.jpg"><img src="images/belait/monument.jpg" alt="" title="Caption Here" class="filter belait" /></a>
+                          <!-- Events -->
+                          <a href="images/Events/coding-3.jpg"><img src="images/Events/coding-3.jpg" alt="" title="Caption here" class="filter events belait" /></a>
+                          <a href="images/Events/esports.webp"><img src="images/Events/esports.webp" alt="" title="Caption Here" class="filter events brunei-muara" /></a>
+                          <a href="images/Events/fun-run1.jpg"><img src="images/Events/fun-run1.jpg" alt="" title="Caption Here" class="filter events brunei-muara" /></a>
+                          <div class="clear"></div>
+                        </div>
+
+                      </div>
+                      <script src="js/simple-lightbox.js"></script>
+                      <script>
+                        (function() {
+                          var $gallery = new SimpleLightbox('.gallery a', {
+                            close: true,
+                          });
+                        })();
+                      </script>
+                      <script type="text/javascript">
+                        $(document).ready(function(){
+
+                          $(".filter-button").click(function(){
+                            var value = $(this).attr('data-filter');
+
+                            if(value == "all")
+                            {
+
+                              $('.filter').show('1000');
+                            }
+                            else
+                            {
+
+                              $(".filter").not('.'+value).hide('3000');
+                              $('.filter').filter('.'+value).show('3000');
+
+                            }
+                          });
+
+                          if ($(".filter-button").removeClass("active")) {
+                            $(this).removeClass("active");
+                          }
+                          $(this).addClass("active");
+
+                        });
+                      </script>
+
+                    </body>
+                    </html>
