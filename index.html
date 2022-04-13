@@ -9,7 +9,23 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
   <style>
+
+    @font-face {
+    font-family: "breakfast";
+    src: url("fonts/Breakfast.ttf");
+  }
+
+  h1 {
+    font-family: "breakfast";
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
 
   #banner {
     width: 100%;
@@ -33,6 +49,76 @@
   body {
     background-color: #fcd152;
   }
+
+  .m100{
+    margin-top: 100px;
+  }
+
+  .carousel .carousel-indicators li {
+    position: relative;
+    width: 200px;
+    height: 10px;
+    top: 60px;
+  }
+
+  .eventContent1 {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+  }
+
+
+  .eventContent2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+    padding: 10px;
+  }
+
+  .eventContent2 div {
+    border: 5px solid white;
+    width: 1fr;
+    height: 300px;
+  }
+
+  .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='White'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+  position: relative;
+  top: 50%;
+}
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='White'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+    position: relative;
+  top: 50%;
+  }
+
+  .feedback {
+    width: auto;
+    height: 300px;
+    border: 5px solid white;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .committees {
+    width: auto;
+    height: 800px;
+    border: 5px solid white;
+    margin-top: 50px;
+  }
+
+  .sponsor {
+    width: auto;
+    background-color: white;
+    height: 400px;
+    margin-bottom: 0;
+  }
+
+
+
   </style>
 </head>
 <body>
@@ -79,30 +165,169 @@
   <img src="images/landingpage.png" id="banner" class="img-fluid" alt="...">
 </div>
 
-<div class="container" style="border: 1px solid black;">
-  <!-- Content here -->
-  TEST SCROLL
-  <br>
-  <br>
-  
-  <br>
-  <br>
-  
-  <br>
-  <br>
-  
-  <br>
-  <br>
-  
-  <br>
-  <br>
-  TEST SCROLL
-  <br>
 
+<!-- CAROUSEL UPCOMING EVENTS -->
+
+<div class="container">
+  <h1>Upcoming Events</h1>
+</div>
+
+<div class="container carousel slide" id="carouselUpcomingEvents" data-bs-ride="carousel">
+
+  <!-- INDICATORS -->
+
+  <ol class="carousel-indicators">
+
+    <li data-bs-target="#carouselUpcomingEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+    <li data-bs-target="#carouselUpcomingEvents" data-bs-slide-to="1" aria-label="Slide 2"></li>
+    <li data-bs-target="#carouselUpcomingEvents" data-bs-slide-to="2" aria-label="Slide 3"></li>
+  
+  </ol>
+
+  <div class="eventContent1">
+
+    <!-- PREVIOUS BUTTON -->
+
+    <div type="button" data-bs-target="#carouselUpcomingEvents" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="eventContent2">
+          <div>ONE</div>
+          <div>TWO</div>
+          <div>THREE</div>
+          <div>FOUR</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="eventContent2">
+          <div>FIVE</div>
+          <div>SIX</div>
+          <div>SEVEN</div>
+          <div>EIGHT</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="eventContent2">
+          <div>NINE</div>
+          <div>TEN</div>
+          <div>ELEVEN</div>
+          <div>TWELVE</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEXT BUTTON -->
+
+    <div type="button" data-bs-target="#carouselUpcomingEvents" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </div>
+  </div>
 </div>
 
 
-<div class="mt-5 p-4 bg-dark text-white text-center">
+<!-- CAROUSEL PREVIOUS EVENTS -->
+
+<div class="container m100">
+  <h1>Previous Events</h1>
+</div>
+
+<div class="container carousel slide" id="carouselPreviousEvents" data-bs-ride="carousel">
+
+  <!-- INDICATORS -->
+
+  <ol class="carousel-indicators">
+
+    <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+    <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="1" aria-label="Slide 2"></li>
+    <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="2" aria-label="Slide 3"></li>
+  
+  </ol>
+
+  <div class="eventContent1">
+
+    <!-- PREVIOUS BUTTON -->
+
+    <div type="button" data-bs-target="#carouselPreviousEvents" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="eventContent2">
+          <div>ONE</div>
+          <div>TWO</div>
+          <div>THREE</div>
+          <div>FOUR</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="eventContent2">
+          <div>FIVE</div>
+          <div>SIX</div>
+          <div>SEVEN</div>
+          <div>EIGHT</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="eventContent2">
+          <div>NINE</div>
+          <div>TEN</div>
+          <div>ELEVEN</div>
+          <div>TWELVE</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEXT BUTTON -->
+
+    <div type="button" data-bs-target="#carouselPreviousEvents" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </div>
+  </div>
+</div>
+
+<!-- FEEDBACK -->
+
+<div class="container m100">
+  <h1>Feedback</h1>
+</div>
+
+<div class="feedback">
+  
+</div>
+
+<!-- ORGANIZING COMMITTEES -->
+
+<div class="container m100">
+  <h1>Organizing Committees</h1>
+</div>
+
+<div class="container committees">
+  
+</div>
+
+<!-- SPONSOR SECTION -->
+
+<div class="sponsor m100 text-center">
+  SPONSOR SECTION
+</div>
+
+<div class="p-4 bg-dark text-white text-center">
   <p>Footer</p>
 </div>
 
