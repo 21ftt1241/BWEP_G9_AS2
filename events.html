@@ -30,35 +30,41 @@
     body {
       background-color: #fcd152;
     }
-    .card-container {
-      padding: 10px;}
+    .card-container {padding: 10px;}
 
       .card{
         margin-left: auto;
         margin-right: auto;
-        max-width: 85%;
-        margin-bottom: 0px;
-      }
+        max-width: 600px;
+        margin-bottom: 0px;}
+
       .search-row{
         margin: auto;
-        max-width: 70%;
-      }
+        max-width: 70%;}
+
       .btn-warning{
-        width: 100%;
-      }
+        width: 100%;}
+
       .img-thumbnail{
         max-width: 50%;
         float: left;
         margin-right: 10px;
-        margin-bottom: 10px;
-      }
-      .card-text{
-        text-align: justify;
-      }
+        margin-bottom: 10px;}
+
+      .card-text{text-align: justify;}
+
+      .dropdown-menu{text-align: center;}
+
+      .btn-group{
+        text-align: center;
+        margin-left: 10px;
+        width: 120px;}
+
+      .filter-button{
+        width: auto;}
     </style>
   </head>
   <body>
-
     <!-- Navbar -->
     <div class="sticky-top" >
       <div class="container nvbar sticky-top">
@@ -101,136 +107,176 @@
 
     <!-- card -->
     <div class="container card-container">
-      <div class="row search-row mb-3">
-        <div class="card card-body search-body">
-          <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Ex: Week1, Outdoor, Belait">
+      <div class="card mb-3 btn-card">
+        <div class="btn-group mt-3">
+          <button class="btn btn-warning filter-button" data-filter="all">Show All</button>
         </div>
-      </div>
-      <div class="row" id="myItems">
-        <div id="accordion">
-          <div class="card-deck">
-            <div class="card mb-3">
-              <div class="card-body" id="body1">
-                <h5 class="card-title">Get Fit Marathon Challenge</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Outdoor , Brunei Muara</h6>
-                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse1" data-parent="#accordion">Show More</button>
-              </div>
-              <div id="collapse1" class="accordion-collapse collapse">
-                <div class="card-body">
-                  <img src="images/Events/fun-run1.jpg" alt="fun-run" class="img-thumbnail">
-                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
-                  <p class="card-text">Compete in a series of medium to long-distance marathon in the Brunei December Run 2022. You can choose from beginners 5km fun run , 10km intermediate run and even 42km marathon challenge.</p>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
-                      <p class="card-text">Dec 5, 2022 - Dec 12, 2022 (Except Friday)<br>8am - 10am</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>  
+        <div class="btn-toolbar mt-3">
+        <div class="btn-group dropend mb-3">
+          <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+            District
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item filter-button" data-filter="brunei-muara" href="#">Brunei-Muara</a></li>
+            <li><a class="dropdown-item filter-button" data-filter="tutong" href="#">Tutong</a></li>
+            <li><a class="dropdown-item filter-button" data-filter="belait" href="#">Belait</a></li>
+            <li><a class="dropdown-item filter-button" data-filter="temburong" href="#">Temburong</a></li>
+          </ul>
+            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+              Week
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item filter-button" data-filter="week1" href="#">Week 1</a></li>
+              <li><a class="dropdown-item filter-button" data-filter="week2" href="#">Week 2</a></li>
+              <li><a class="dropdown-item filter-button" data-filter="week3" href="#">Week 3</a></li>
+              <li><a class="dropdown-item filter-button" data-filter="week4" href="#">Week 4</a></li>
+            </ul>
+            <!-- </div> -->
+            <!-- <div class="btn-group mb-3" role="group"> -->
+              <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+                Venue
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item filter-button" data-filter="indoor" href="#">Indoor</a></li>
+                <li><a class="dropdown-item filter-button" data-filter="outdoor" href="#">Outdoor</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <div class="row" id="myItems">
+            <div id="accordion">
+              <div class="card-deck">
+                <div class="card mb-3 filter brunei-muara week1 outdoor">
+                  <div class="card-body" id="body1">
+                    <h5 class="card-title">Get Fit Marathon Challenge</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Outdoor , Brunei Muara</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse1" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse1" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/Events/fun-run1.jpg" alt="fun-run" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">Compete in a series of medium to long-distance marathon in the Brunei December Run 2022. You can choose from beginners 5km fun run , 10km intermediate run and even 42km marathon challenge.</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 5, 2022 - Dec 12, 2022 (Except Friday)<br>8am - 10am</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>  
 
-            <div class="card mb-3">
-              <div class="card-body" id="body2">
-                <h5 class="card-title">E-Sport Tournament</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Indoor , Brunei Muara</h6>
-                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse2" data-parent="#accordion">Show More</button>
-              </div>
-              <div id="collapse2" class="accordion-collapse collapse">
-                <div class="card-body">
-                  <img src="images/Events/esports.webp" alt="esports" class="img-thumbnail">
-                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
-                  <p class="card-text">This will be the second eSport tournament held by JPCC in collaboration with Game On. This event is open to 13 years old and above with the aim to exploring ways to overcome the limitations of organising such events during COVID-19 restrictions</p>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
-                      <p class="card-text">Dec 5, 2022 - Dec 12, 2022 (Except Friday)<br>8am - 10am</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>  
+                <div class="card mb-3 filter brunei-muara week1 indoor">
+                  <div class="card-body" id="body2">
+                    <h5 class="card-title">E-Sport Tournament</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Week 1 , Indoor , Brunei Muara</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse2" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse2" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/Events/esports.webp" alt="esports" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">This will be the second eSport tournament held by JPCC in collaboration with Game On. This event is open to 13 years old and above with the aim to exploring ways to overcome the limitations of organising such events during COVID-19 restrictions</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 5, 2022 - Dec 12, 2022 (Except Friday)<br>8am - 10am</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>  
 
-            <div class="card mb-3">
-              <div class="card-body" id="body3">
-                <h5 class="card-title">ICT HUB: Code Jam & Beginner's Workshop</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 2 , Indoor , Belait</h6>
-                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse3" data-parent="#accordion">Show More</button>
-              </div>
-              <div id="collapse3" class="accordion-collapse collapse">
-                <div class="card-body">
-                  <img src="images/events/coding-3.jpg" alt="fun-run" class="img-thumbnail">
-                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
-                  <p class="card-text">Seria Energy Lab are hosting code jam for aspiring software developers between the age of 16 - 21, there will also be a free workcourse for <b>LIMITED SLOT ONLY!!</b></p>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
-                      <p class="card-text">Dec 13, 2022 - Dec 20, 2022 (Except Friday)<br>9am - 4pm</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>  
+                <div class="card mb-3 filter belait week2 indoor">
+                  <div class="card-body" id="body3">
+                    <h5 class="card-title">ICT HUB: Code Jam & Beginner's Workshop</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Week 2 , Indoor , Belait</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse3" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse3" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/coding-3.jpg" alt="fun-run" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">Seria Energy Lab are hosting code jam for aspiring software developers between the age of 16 - 21, there will also be a free workcourse for <b>LIMITED SLOT ONLY!!</b></p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 13, 2022 - Dec 20, 2022 (Except Friday)<br>9am - 4pm</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>  
 
-            <div class="card mb-3">
-              <div class="card-body" id="body4">
-                <h5 class="card-title">Temburong Bridge Ultra Marathon</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 3 , Outdoor , Temburong</h6>
-                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse4" data-parent="#accordion">Show More</button>
-              </div>
-              <div id="collapse4" class="accordion-collapse collapse">
-                <div class="card-body">
-                  <img src="images/Temburong/temburong-bridge.jpg" alt="fun-run" class="img-thumbnail">
-                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
-                  <p class="card-text">This year’s ultra marathon is a test of endurances as you challenge yourself to a 35-km run. This marathon is held in conjunction with His Majesty Sultan and Yang Di-Pertuan of Brunei Darussalam’s 76th Birthday.</p>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
-                      <p class="card-text">Dec 21, 2022 (Except Friday)<br>8am - 11am</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>  
+                <div class="card mb-3 filter temburong week3 outdoor">
+                  <div class="card-body" id="body4">
+                    <h5 class="card-title">Temburong Bridge Ultra Marathon</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Week 3 , Outdoor , Temburong</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse4" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse4" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/Temburong/temburong-bridge.jpg" alt="fun-run" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">This year’s ultra marathon is a test of endurances as you challenge yourself to a 35-km run. This marathon is held in conjunction with His Majesty Sultan and Yang Di-Pertuan of Brunei Darussalam’s 76th Birthday.</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 21, 2022 (Except Friday)<br>8am - 11am</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>  
 
-            <div class="card mb-3">
-              <div class="card-body" id="body5">
-                <h5 class="card-title">Inspire & Create</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Tags: Week 4 , Indoor , Tutong</h6>
-                <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse5" data-parent="#accordion">Show More</button>
+                <div class="card mb-3 filter tutong week4 indoor">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">Inspire & Create</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Week 4 , Indoor , Tutong</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse5" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse5" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/bench-lab.jpeg" alt="fun-run" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">BenchLab’s first ever “Inspire and Create” are made for those who are eager to learn more about photography, music, crafts and many more!</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 01, 2022 - Dec 27, 2022 (Except Friday)<br>8am - 4pm</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>  
               </div>
-              <div id="collapse5" class="accordion-collapse collapse">
-                <div class="card-body">
-                  <img src="images/events/bench-lab.jpeg" alt="fun-run" class="img-thumbnail">
-                  <p class="card-subtitle mb-2"><b>Event Details</b></p>
-                  <p class="card-text">BenchLab’s first ever “Inspire and Create” are made for those who are eager to learn more about photography, music, crafts and many more!</p>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
-                      <p class="card-text">Dec 01, 2022 - Dec 27, 2022 (Except Friday)<br>8am - 4pm</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+    <script type="text/javascript">
+      $(document).ready(function(){
 
-<script type="text/javascript">
-  function myFunction() {
-    var input, filter, cards, cardContainer, h6, title, i;
-    input = document.getElementById("myFilter");
-    filter = input.value.toUpperCase();
-    cardContainer = document.getElementById("myItems");
-    cards = cardContainer.getElementsByClassName("card");
-    for (i = 0; i < cards.length; i++) {
-      title = cards[i].querySelector(".card-body h6.card-subtitle");
-      if (title.innerText.toUpperCase().indexOf(filter) > -1) {
-        cards[i].style.display = "";
-      } else {
-        cards[i].style.display = "none";
-      }
-    }
-  }
-</script>
-</body>
-</html>
+        $(".filter-button").click(function(){
+          var value = $(this).attr('data-filter');
+
+          if(value == "all")
+          {
+
+            $('.filter').show('1000');
+          }
+          else
+          {
+
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+
+          }
+        });
+
+        if ($(".filter-button").removeClass("active")) {
+          $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+
+      });
+    </script>
+  </body>
+  </html>
