@@ -4,20 +4,20 @@ var google;
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
+    // Set the latitude and longtitude to bandar seri begawan
     var myLatlng = new google.maps.LatLng(4.903052, 114.939819);
     // 39.399872
     // -8.224454
     
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 10,
+        zoom: 15,
 
         // The latitude and longitude to center the map (always required)
         center: myLatlng,
 
         // How you would like to style the map. 
-        scrollwheel: false,
+        scrollwheel: true,
         styles: [
             {
                 "featureType": "administrative.country",
