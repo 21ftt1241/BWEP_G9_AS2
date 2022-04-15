@@ -32,40 +32,49 @@
     }
     .card-container {padding: 10px;}
 
-      .card{
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 600px;
-        margin-bottom: 0px;}
+    .card{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+      margin-bottom: 0px;}
 
-      .search-row{
-        margin: auto;
-        max-width: 70%;}
+    .search-row{
+      margin: auto;
+      max-width: 70%;}
 
-      .btn-warning{
-        width: 100%;}
+    .btn-warning{
+      width: 100%;}
 
-      .img-thumbnail{
-        max-width: 50%;
-        float: left;
-        margin-right: 10px;
-        margin-bottom: 10px;}
+    .img-thumbnail{
+      max-width: 50%;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;}
 
-      .card-text{text-align: justify;}
+    .card-text{text-align: justify;}
 
-      .dropdown-menu{text-align: center;}
+    .dropdown-menu{text-align: center;}
 
-      .btn-group{
-        text-align: center;
-        margin-left: 10px;
-        width: 120px;}
+    .btn-group{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 120px;}
 
-      .filter-button{
-        width: auto;}
-    </style>
+    .filter-button{width: auto;}
+
+    .btn-toolbar{
+      margin-right: 50%;
+      margin-left: auto;}
+
+    .btn-card{
+      max-width: 450px;
+      }
+
+  </style>
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Navigation bar with Bootstrap -->
     <div class="sticky-top" >
       <div class="container nvbar sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -105,12 +114,13 @@
       </div>
     </div>
 
-    <!-- card -->
+    <!-- Card container -->
     <div class="container card-container">
-      <div class="card mb-3 btn-card">
+      <div class="card btn-card mb-3 btn-card">
         <div class="btn-group mt-3">
           <button class="btn btn-warning filter-button" data-filter="all">Show All</button>
         </div>
+        <!-- Dropdown button toolbar with J-Query filter button -->
         <div class="btn-toolbar mt-3">
         <div class="btn-group dropend mb-3">
           <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
@@ -130,9 +140,8 @@
               <li><a class="dropdown-item filter-button" data-filter="week2" href="#">Week 2</a></li>
               <li><a class="dropdown-item filter-button" data-filter="week3" href="#">Week 3</a></li>
               <li><a class="dropdown-item filter-button" data-filter="week4" href="#">Week 4</a></li>
+              <li><a class="dropdown-item filter-button" data-filter="pEvents" href="#">Past Events</a></li>
             </ul>
-            <!-- </div> -->
-            <!-- <div class="btn-group mb-3" role="group"> -->
               <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
                 Venue
               </button>
@@ -143,9 +152,11 @@
             </div>
           </div>
         </div>
+        <!-- Bootstrap cards features with accordion dropdown -->
           <div class="row" id="myItems">
             <div id="accordion">
               <div class="card-deck">
+                <!-- Event 1 -->
                 <div class="card mb-3 filter brunei-muara week1 outdoor">
                   <div class="card-body" id="body1">
                     <h5 class="card-title">Get Fit Marathon Challenge</h5>
@@ -154,18 +165,21 @@
                   </div>
                   <div id="collapse1" class="accordion-collapse collapse">
                     <div class="card-body">
-                      <img src="images/Events/fun-run1.jpg" alt="fun-run" class="img-thumbnail">
+                      <img src="images/events/fun-run1.jpg" alt="fun-run" class="img-thumbnail">
                       <p class="card-subtitle mb-2"><b>Event Details</b></p>
                       <p class="card-text">Compete in a series of medium to long-distance marathon in the Brunei December Run 2022. You can choose from beginners 5km fun run , 10km intermediate run and even 42km marathon challenge.</p>
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
                           <p class="card-text">Dec 5, 2022 - Dec 12, 2022 (Except Friday)<br>8am - 10am</p>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">AKIF Media Marketing and Event</p>
                         </li>
                       </ul>
                     </div>
                   </div>
-                </div>  
+                </div>
 
+                <!-- Event 2 -->
                 <div class="card mb-3 filter brunei-muara week1 indoor">
                   <div class="card-body" id="body2">
                     <h5 class="card-title">E-Sport Tournament</h5>
@@ -174,18 +188,21 @@
                   </div>
                   <div id="collapse2" class="accordion-collapse collapse">
                     <div class="card-body">
-                      <img src="images/Events/esports.webp" alt="esports" class="img-thumbnail">
+                      <img src="images/events/esports.webp" alt="esports" class="img-thumbnail">
                       <p class="card-subtitle mb-2"><b>Event Details</b></p>
                       <p class="card-text">This will be the second eSport tournament held by JPCC in collaboration with Game On. This event is open to 13 years old and above with the aim to exploring ways to overcome the limitations of organising such events during COVID-19 restrictions</p>
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
                           <p class="card-text">Dec 5, 2022 - Dec 12, 2022 (Except Friday)<br>8am - 10am</p>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">Jerudong Park Country Club</p>
                         </li>
                       </ul>
                     </div>
                   </div>
-                </div>  
+                </div>
 
+                <!-- Event 3 -->
                 <div class="card mb-3 filter belait week2 indoor">
                   <div class="card-body" id="body3">
                     <h5 class="card-title">ICT HUB: Code Jam & Beginner's Workshop</h5>
@@ -200,15 +217,19 @@
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
                           <p class="card-text">Dec 13, 2022 - Dec 20, 2022 (Except Friday)<br>9am - 4pm</p>
+                          <p class="class-subtitle"><b>Organized By:</b></p>
+                          <p class="class-text">Grominda Sdn Bhd</p>
+                          <br>
                         </li>
                       </ul>
                     </div>
                   </div>
-                </div>  
+                </div> 
 
+                <!-- Event 4 -->
                 <div class="card mb-3 filter temburong week3 outdoor">
                   <div class="card-body" id="body4">
-                    <h5 class="card-title">Temburong Bridge Ultra Marathon</h5>
+                    <h5 class="card-title">Temburong Ultra Marathon</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Tags: Week 3 , Outdoor , Temburong</h6>
                     <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse4" data-parent="#accordion">Show More</button>
                   </div>
@@ -220,37 +241,274 @@
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
                           <p class="card-text">Dec 21, 2022 (Except Friday)<br>8am - 11am</p>
+                          <p class="class-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">Begawan Athlete</p>
                         </li>
                       </ul>
                     </div>
                   </div>
-                </div>  
+                </div> 
 
-                <div class="card mb-3 filter tutong week4 indoor">
+                <!-- Event 5 -->
+                <div class="card mb-3 filter indoor">
                   <div class="card-body" id="body5">
-                    <h5 class="card-title">Inspire & Create</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Tags: Week 4 , Indoor , Tutong</h6>
+                    <h5 class="card-title">Rehatkan Minda</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Brunei-Muara, Indoor</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse10" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse10" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/Rehatkan-Minda.jpg" alt="foto-maraton" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">Tease your mind and take part in an online activity organised by the Museums Department. Do crosswords, puzzles and quizzes, find hidden words and answers to questions related to the museums. </p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 01, 2021 - Dec 30, 2021 (Except Friday)<br>8am - 12pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">Jabatan Muzium-Muzium</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- Event6 -->
+                <div class="card mb-3 filter week4 brunei-muara indoor">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">Laguna Seni</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Week 4 Brunei-Muara, Indoor</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse11" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse11" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/laguna.jpg" alt="foto-maraton" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">Witness creativity in free flow during Luguna Seni where artwork is produced on a massive scale by improvisation and spontaneity. There is no limit to creativity here and the artwork will be based on theme suggestions or independent ideas. </p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 01, 2021 - Dec 30, 2021 (Except Friday)<br>8am - 12pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">Dewan Bahasa dan Pustaka</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Event7 -->
+                <div class="card mb-3 filter tutong outdoor">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">'Let's Try Hockey' Virtual Clinic</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Tutong, Outdoor</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse12" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse12" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/hockey.jpeg" alt="foto-maraton" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">The ‘Let’s Try Hockey’ virtual clinic is open to all youths interested to learn hockey. Learn the basic activities delivered by a team of coaches. </p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 04, 2021 - Dec 15, 2021 (Except Friday)<br>8am - 12pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">Brunei Darussalam Hockey Association</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Event8 -->
+                <div class="card mb-3 filter belait indoor">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">Diskusi Komik</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Belait, Indoor</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse13" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse13" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/komik.jpg" alt="foto-maraton" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">Diskusi Komik is a gathering of comic enthusiasts in Brunei. Together they encourage creativity, exchange ideas and share experiences as part of a long-running conversation among cartoonists and comic artists since December 6, 2010. </p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 04, 2021 - Dec 12, 2021 (Except Friday)<br>8am - 12pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">Dewan Bahasa dan Pustaka</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Event9 -->
+                <div class="card mb-3 filter temburong indoor">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">Kenali Permainan Tradisi Kitan</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Temburong, Indoor</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse14" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse14" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/tradisi.jpg" alt="foto-maraton" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">In this event, you can learn what makes traditional games such as Pasang, Congkak, Tilu-tilan and Simban so endearing to many generations of Bruneians who grew up playing them.</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 06, 2021 - Dec 11, 2021 (Except Friday)<br>8am - 12pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">Jabatan Muzium-Muzium</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Event10 -->
+                <div class="card mb-3 filter brunei-muara indoor">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">Culinary Journey - Cooking with Seoul</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Brunei-Muara , Indoor</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse15" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse15" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/cooking.jpg" alt="foto-maraton" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">Level up your culinary skills with Royal Brunei Catering’s Cooking with Seoul. Connect with fellow foodies and learn how to cook staple Korean food with a local twist – Yangnyeom Chili Padi Korean Fried Chicken and Beef Bibimbap Fusion Bowl with Signature Sambal Sauce. Join this interactive virtual cooking class with RBC Chef Sam and enjoy delicious Korean food at home!</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 06, 2021 - Dec 11, 2021 (Except Friday)<br>8am - 12pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">Royal Brunei Catering Sdn. Bhd. Collaboration with Korea and Malaysia Embassy</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Past Event 1 -->
+                <div class="card mb-3 filter pEvents">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">Innovation Hub</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Past Events</h6>
                     <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse5" data-parent="#accordion">Show More</button>
                   </div>
                   <div id="collapse5" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/inno-hub.png" alt="fun-run" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">Seria Energy Lab are introducing online workshop which focus on basic level of robotics programming and circuitry.</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 01, 2021 - Dec 28, 2021<br>8am - 4pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text"> Seria Energy Lab </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Past Events 2 -->
+                <div class="card mb-3 filter pEvents">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">Inspire & Create</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Past Events</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse6" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse6" class="accordion-collapse collapse">
                     <div class="card-body">
                       <img src="images/events/bench-lab.jpeg" alt="fun-run" class="img-thumbnail">
                       <p class="card-subtitle mb-2"><b>Event Details</b></p>
                       <p class="card-text">BenchLab’s first ever “Inspire and Create” are made for those who are eager to learn more about photography, music, crafts and many more!</p>
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
-                          <p class="card-text">Dec 01, 2022 - Dec 27, 2022 (Except Friday)<br>8am - 4pm</p>
+                          <p class="card-text">Dec 01, 2021 - Dec 27, 2021 (Except Friday)<br>8am - 4pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text"> Bench Lab </p>
                         </li>
                       </ul>
                     </div>
                   </div>
-                </div>  
+                </div>
+
+                <!-- Past Events 3 -->
+                <div class="card mb-3 filter pEvents">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">Photo Marathon</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Past Events</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse7" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse7" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/foto-maraton.png" alt="foto-maraton" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">Capture the history of Brunei through your eyes. Foto Maraton Sejarah Brunei’ is open for 2 categories, for 13 to 19 years old, and 20 years old and above. Both categories have limited slots so be sure to register fast! For more information, visit their Instagram page.</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 01, 2021 - Dec 30, 2021 (Except Friday)<br>8am - 1:45pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text"> Pusat Sejarah Brunei </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Past Events 4 -->
+                <div class="card mb-3 filter pEvents">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">Pasar Rakyat</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Past Events</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse8" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse8" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/Pasar.jpeg" alt="foto-maraton" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">Pasar Rakyat Virtual 2021 is an exhibition and selling event of Indonesian products and also products that have Indonesian feel virtually. The event is aimed at helping small and medium enterprises and communities to promote their businesses and connect with local costumers. Pasar Rakyat is a routine event that held annually by the Embassy of the Republic of Indonesia</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 03, 2021 - Dec 5, 2021 (Except Friday)<br>8am - 1:45pm</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text"> Embassy of the Republic of Indonesia</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Past Events 5 -->
+                <div class="card mb-3 filter pEvents">
+                  <div class="card-body" id="body5">
+                    <h5 class="card-title">The Tiny Lit Festival</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tags: Past Events</h6>
+                    <button class="btn btn-warning mt-2" data-bs-toggle="collapse" href = "#collapse9" data-parent="#accordion">Show More</button>
+                  </div>
+                  <div id="collapse9" class="accordion-collapse collapse">
+                    <div class="card-body">
+                      <img src="images/events/tiny-lit.jpeg" alt="foto-maraton" class="img-thumbnail">
+                      <p class="card-subtitle mb-2"><b>Event Details</b></p>
+                      <p class="card-text">The Tiny Lit Fest aims to amplify and celebrate the local literary ecosystem. They will be bringing 16 partner organisations for 18 micro events held over 7 days in December.</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><p class="card-subtitle"><b>Time</b></p>
+                          <p class="card-text">Dec 06, 2021 - Dec 12, 2021 (Except Friday)<br>8am - 10am</p><br>
+                          <p class="card-subtitle"><b>Organized By:</b></p>
+                          <p class="card-text">Heartwite Company</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- JS function for filter button -->
     <script type="text/javascript">
       $(document).ready(function(){
 
