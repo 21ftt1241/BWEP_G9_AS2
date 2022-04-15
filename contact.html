@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact</title>
+  <title>Places</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
  <style>
+
+    h1 {text-align: center;}
+
+    div>img {width: 300px; 
+      height: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div>p {font-size: 15px;}
+
     #banner {
       width: 100%;
     }
 
-    .navbar {
-      border-radius: 10px;
-      width: 100%;
-    }
+    #cc{display: grid;
+          padding: 10px;
+          grid-template-columns: 1fr 1fr 1fr;
+          height: 50vh;
+          font-size: 25px;
+        }
 
-    .nvbar {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
+    .space {width: 65%;
+          padding-bottom: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: white;}
+
+    .contain {
+      text-align: center;
+      }
 
     li{
       margin-left: 10px;
@@ -33,12 +56,9 @@
     }
   </style>
 </head>
-<style type="text/css">
-  .colorbg{
-    color: yellow;
-  }
-</style>
 <body>
+
+
 
 <!-- Navbar -->
 <div class="sticky-top" >
@@ -80,16 +100,23 @@
   </div>
 </div>
 
-<div id="banner">
-  <img src="images/landingpage.png" id="banner" class="img-fluid" alt="...">
-</div>
-</nav>
+<div class = "space">
 
+<h1>Contact US</h1>
 
-
-<div class="mt-4 p-3 bg-dark text-white text-center fixed-bottom">
-  <p>Footer</p>
-</div>
+<div id="cc">
+  <div class="contain"><img src="images\Contact\Whatsapp.png" alt="Whatsapp">
+  <br>Whatsapp
+  <p>Group Name: Brunei Festival 2021</p>
+  </div> 
+  <div class="contain"><img src="images\Contact\Number.png" alt="Contact Number">
+  <br>Contact Number
+  <p>+673 888 8888</p>
+  </div>
+  <div class="contain"><img src="images\Contact\About.png" alt="About Us">
+  <br>About Us
+  <p>We are the organization for the brunei festival</p>
+  </div>
 
 </body>
 </html>
