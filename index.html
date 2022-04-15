@@ -25,6 +25,7 @@
     color: white;
     text-align: center;
     font-size: 80px;
+    padding: 20px;
 }
 
   #banner {
@@ -75,12 +76,16 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: 1em;
     padding: 10px;
+
   }
 
-  .eventContent2 div {
-    border: 5px solid white;
+  .eventContent2 > div {
     width: 1fr;
     height: 300px;
+    padding: 5px;
+    background-color: rgba(255,193,7,255);
+    color: black;
+    border-radius: 10px;
   }
 
   .carousel-control-prev-icon {
@@ -115,6 +120,43 @@
     background-color: white;
     height: 400px;
     margin-bottom: 0;
+  }
+
+  .flow {
+    overflow: hidden;
+  }
+
+  .imgsize {
+    width: auto;
+    height: 290px;
+    border-radius: 10px;
+  }
+
+  .viewmore {
+    background-color: #fcd152;
+  }
+
+  .viewmore:hover {
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+  }
+
+  small {
+    color: white;
+  }
+
+  h4 {
+    background-color: rgba(255,255,255,0.9);
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+  }
+
+  h5 {
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
   }
 
 
@@ -198,28 +240,199 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="eventContent2">
-          <div>ONE</div>
-          <div>TWO</div>
-          <div>THREE</div>
-          <div>FOUR</div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+         <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div class="carousel-item">
         <div class="eventContent2">
-          <div>FIVE</div>
-          <div>SIX</div>
-          <div>SEVEN</div>
-          <div>EIGHT</div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+         <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div class="carousel-item">
         <div class="eventContent2">
-          <div>NINE</div>
-          <div>TEN</div>
-          <div>ELEVEN</div>
-          <div>TWELVE</div>
+
+         <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -248,7 +461,7 @@
 
     <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
     <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="1" aria-label="Slide 2"></li>
-    <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="2" aria-label="Slide 3"></li>
+    <!-- <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="2" aria-label="Slide 3"></li> -->
   
   </ol>
 
@@ -266,28 +479,103 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="eventContent2">
-          <div>ONE</div>
-          <div>TWO</div>
-          <div>THREE</div>
-          <div>FOUR</div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+         <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div class="carousel-item">
         <div class="eventContent2">
-          <div>FIVE</div>
-          <div>SIX</div>
-          <div>SEVEN</div>
-          <div>EIGHT</div>
-        </div>
-      </div>
 
-      <div class="carousel-item">
-        <div class="eventContent2">
-          <div>NINE</div>
-          <div>TEN</div>
-          <div>ELEVEN</div>
-          <div>TWELVE</div>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h4 class="card-title">Event Name</h4>
+                  <h5 class="card-text">Event Date</h5>
+                  <p class="card-text"><small>Organized by</small></p>
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
