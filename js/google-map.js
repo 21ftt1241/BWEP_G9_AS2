@@ -17,7 +17,7 @@ function init() {
         center: myLatlng,
 
         // How you would like to style the map. 
-        scrollwheel: true,
+        scrollwheel: false,
         styles: [
             {
                 "featureType": "administrative.country",
