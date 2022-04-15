@@ -89,27 +89,39 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal">
         </button>
       </div>
-
+      <form class="needs-validation" novalidate>
       <div class="modal-body">
-        <form onsubmit="return saveFeedback(this);">
+        
           <label for="recipient-name" class="col-form-label">Your Rating:</label>
+
           <div class='starrr'></div>
+
           <div class="mb-2">
+            <div class="has-valid">
             <label for="recipient-name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="recipient-name" required>
+            <div class="invalid-feedback">Please Enter Your Name</div>
+            </div>
           </div>
 
           <div class="mb-2">
+            <div class="has-valid">
             <label for="recipient-name" class="col-form-label">Email:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="recipient-name" required>
+            <div class="invalid-feedback">Please Enter Your Email</div>
+            </div>
           </div>
 
           <div class="form-group feedback-form" style="margin-top: 10px;">
+            <div class="has-valid">
             <label for="recipient-name" class="col-form-label">Your Feedback:</label>
-            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+            <textarea name="" id="" cols="30" rows="10" class="form-control" required></textarea>
+            <div class="invalid-feedback">Please leave a feedback</div>
+            </div>
+            </div>
           </div>
 
-          <input type="submit" class="btn btn-primary pull-right" value="Submit" />
+          <input type="submit" class="btn btn-primary pull-right mr-3" value="Submit" />
         </form>
       </div>
 
@@ -164,9 +176,6 @@
                 <div class="contact-wrap w-100 p-md-5 p-4">
                   <h3 class="mb-4">Contact Us</h3>
                   <div id="form-message-warning" class="mb-4"></div> 
-                  <div id="form-message-success" class="mb-4">
-                    Your message was sent, thank you!
-                  </div>
                   <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                     <div class="row">
                       <div class="col-md-6">
@@ -212,7 +221,7 @@
                               <span class="fa fa-map-marker"></span>
                             </div>
                             <div class="text">
-                              <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                              <p><span>Address: </span> Tourism Development Department, Level 3, Ministry of Primary Resources and Tourism, Jalan Menteri Besar BB3910, Brunei Darussalam</p>
                             </div>
                           </div>
                         </div>
@@ -224,7 +233,7 @@
                               <span class="fa fa-phone"></span>
                             </div>
                             <div class="text">
-                              <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                              <p><span>Phone:</span> <a href="tel://6732380022">+ 673 2380022</a></p>
                             </div>
                           </div>
                         </div>
@@ -235,7 +244,7 @@
                               <span class="fa fa-paper-plane"></span>
                             </div>
                             <div class="text">
-                              <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                              <p><span>Email:</span> <a href="mailto:info@tourism.gov.bn">info@tourism.gov.bn</a></p>
                             </div>
                           </div>
                         </div>
@@ -247,7 +256,7 @@
                               <span class="fa fa-globe"></span>
                             </div>
                             <div class="text">
-                              <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                              <p><span>Website</span> <a href="www.bruneitourism.com">www.bruneitourism.com</a></p>
                             </div>
                           </div>
                         </div>
@@ -274,6 +283,7 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
+  <!-- Feedback Star Rating Javascript -->
   <script type="text/javascript">
     var ratings = 0;
     
@@ -290,12 +300,32 @@
     });
   </script>
 
+  <!-- JS Funtion for form validation -->
+  <script type="text/javascript">
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+
+  <!-- Star Rating dependencies -->
   <link rel="stylesheet" type="text/css" href="css/starrr.css" />
   <script src="js/starrr.js"></script>
-
-  <script>
-    $("[data-toggle='modal']").modal();
-</script>
 
 </body>
   </html>
