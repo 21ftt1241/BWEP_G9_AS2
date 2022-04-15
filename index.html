@@ -102,17 +102,10 @@
 
   .feedback {
     width: auto;
-    height: 300px;
-    border: 5px solid white;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .committees {
-    width: auto;
-    height: 800px;
-    border: 5px solid white;
-    margin-top: 50px;
+    height: auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
   }
 
   .sponsor {
@@ -146,6 +139,7 @@
     padding: 10px;
     color: black;
     border-radius: 10px;
+    text-align: center;
   }
 
   h5 {
@@ -153,11 +147,55 @@
     padding: 10px;
     color: black;
     border-radius: 10px;
+    text-align: center;
   }
 
   .comingsoon {
     position: relative;
     top: 25%;
+  }
+
+  .comment {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .commentavatar {
+    width: 60px;
+  }
+
+  .committeesavatar {
+    border-radius: 50%;
+    width: 200px;
+  }
+
+  .committees {
+    width: auto;
+    height: auto;
+    background-color: rgba(255,193,7,255);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 2em;
+    text-align: center;
+  }
+
+  .committees>div {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .committees>div:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .committees>div {
+    background-color: rgba(255,255,255,0.5);
+  }
+
+  .committees>div:nth-child(8) {
+    grid-area: 4 / 2 / 5 / 3;
   }
 
   @media only screen and (max-width: 479px) {
@@ -200,7 +238,6 @@
     .viewmore {
     background-color: rgba(255,193,7,255);
   }
-
   }
 
 
@@ -209,41 +246,41 @@
 </head>
 <body>
   <div class="sticky-top" >
-    <div class="container nvbar sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="images/icon.png" alt="" width="50px" height="50px">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="poi.html">Points of Interest</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+<div class="container nvbar sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/icon.png" alt="" width="50px" height="50px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="poi.html">Points of Interest</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
 
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
 </div>
 </div>
 
@@ -288,15 +325,15 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/fun-run1.jpg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Get Fit Marathon Challenge</h4>
+                  <h5 class="card-text">Dec 5 - Dec 12</h5>
+                  <p class="card-text"><small>Organized by AKIF Media Marketing and Event</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse1" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -306,15 +343,15 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/esports.webp" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">E-Sport Tournament</h4>
+                  <h5 class="card-text">Dec 5 - Dec 12</h5>
+                  <p class="card-text"><small>Organized by Jerudong Park Country Club</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse2" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -324,15 +361,15 @@
          <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/coding-3.jpg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Code Jam & Beginner's Workshop</h4>
+                  <h5 class="card-text">Dec 13 - Dec 20</h5>
+                  <p class="card-text"><small>Organized by Grominda Sdn Bhd</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse3" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -342,15 +379,15 @@
            <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/Temburong/temburong-bridge.jpg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Temburong Ultra Marathon</h4>
+                  <h5 class="card-text">Dec 21</h5>
+                  <p class="card-text"><small>Organized by Begawan Athlete</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse4" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -366,15 +403,15 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/Rehatkan-Minda.jpg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Rehatkan Minda</h4>
+                  <h5 class="card-text">Dec 01 - Dec 30</h5>
+                  <p class="card-text"><small>Organized by Jabatan Muzium - Muzium</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse10" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -384,15 +421,15 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/laguna.jpg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Laguna Seni</h4>
+                  <h5 class="card-text">Dec 01 - Dec 30</h5>
+                  <p class="card-text"><small>Organized by Dewan Bahasa dan Pustaka</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse11" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -402,15 +439,15 @@
          <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/hockey.jpeg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">'Let's Try Hockey' Virtual Clinic</h4>
+                  <h5 class="card-text">Dec 04 - Dec 15</h5>
+                  <p class="card-text"><small>Organized by Brunei Darussalam Hockey Association</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse12" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -420,15 +457,15 @@
            <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/komik.jpg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Diskusi Komik</h4>
+                  <h5 class="card-text">Dec 04 - Dec 12</h5>
+                  <p class="card-text"><small>Organized by Dewan Bahasa dan Pustaka</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse13" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -444,15 +481,15 @@
          <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/tradisi.jpg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Kenali Permainan Tradisi Kitan</h4>
+                  <h5 class="card-text">Dec 06 - Dec 11</h5>
+                  <p class="card-text"><small>Organized by Jabatan Muzium-Muzium</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse14" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -466,11 +503,11 @@
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Culinary Journey - Cooking with Seoul</h4>
+                  <h5 class="card-text">Dec 06 - Dec 11</h5>
+                  <p class="card-text"><small>Organized by RBC</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse15" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -535,15 +572,15 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/inno-hub.png" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Innovation Hub</h4>
+                  <h5 class="card-text">2021</h5>
+                  <p class="card-text"><small>Organized by Seria Energy Lab</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse5" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -553,15 +590,15 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/bench-lab.jpeg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Inspire & Create</h4>
+                  <h5 class="card-text">2021</h5>
+                  <p class="card-text"><small>Organized by Bench Lab</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse6" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -571,15 +608,15 @@
          <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/foto-maraton.png" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Photo Marathon</h4>
+                  <h5 class="card-text">2021</h5>
+                  <p class="card-text"><small>Organized by Pusat Sejarah Brunei</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse7" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -589,15 +626,15 @@
            <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/Pasar.jpeg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">Pasar Rakyat</h4>
+                  <h5 class="card-text">2021</h5>
+                  <p class="card-text"><small>Organized by Embassy of the Republic of Indonesia</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse8" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -613,15 +650,15 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/tiny-lit.jpeg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h4 class="card-title">Event Name</h4>
-                  <h5 class="card-text">Event Date</h5>
-                  <p class="card-text"><small>Organized by</small></p>
+                  <h4 class="card-title">The Tiny Lit Festival</h4>
+                  <h5 class="card-text">2021</h5>
+                  <p class="card-text"><small>Organized by Heartwite Company</small></p>
                   <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="#" role="button">View More</a>
+                    <a class="btn btn-warning viewmore" href="events.html#collapse9" role="button">View More</a>
                   </div>
                 </div>
               </div>
@@ -656,11 +693,45 @@
 <!-- FEEDBACK -->
 
 <div class="container m100">
-  <h1>Feedback</h1>
+  <h1>Feedbacks</h1>
 </div>
 
-<div class="feedback">
+<div class="container feedback">
+
+  <div class="d-flex align-items-center comment">
+  <div class="flex-shrink-0">
+    <img src="images/avatars/avatar1.jpg" alt="..." class="commentavatar">
+  </div>
+  <div class="flex-grow-1 ms-3">
+    <div>Wigbrand Niilo</div>
+    <div>&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
   
+</div>
+
+ <div class="d-flex align-items-center justify-content-end comment">
+  <div class="flex-shrink-0">
+    <img src="images/avatars/avatar2.jpg" alt="..." class="commentavatar">
+  </div>
+  <div class="flex-grow-1 ms-3">
+    <div>Damodar Magnus</div>
+    <div>&#9733; &#9733; &#9733; &#9733;</div>
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
+</div>
+
+<div class="d-flex align-items-center justify-content-end comment">
+  <div class="flex-shrink-0">
+    <img src="images/avatars/avatar3.jpg" alt="..." class="commentavatar">
+  </div>
+  <div class="flex-grow-1 ms-3">
+    <div>Heard Rita</div>
+    <div>&#9733; &#9733; &#9733;</div>
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
+</div>
+
 </div>
 
 <!-- ORGANIZING COMMITTEES -->
@@ -670,7 +741,71 @@
 </div>
 
 <div class="container committees">
-  
+
+  <div>
+    <div>
+      <img src="images/avatars/avatar4.jpg" alt="..." class="committeesavatar">
+      <div>Carver Ernest</div>
+      <div>Event Director</div>
+    </div>
+  </div>
+
+   <div>
+    <div>
+      <img src="images/avatars/avatar5.jpg" alt="..." class="committeesavatar">
+    </div>
+    <div>Adair Lonnie</div>
+    <div>Programme Co-ordinator</div>
+  </div>
+
+  <div>
+    <div>
+      <img src="images/avatars/avatar6.jpg" alt="..." class="committeesavatar">
+    </div>
+    <div>Jazmine Frances</div>
+    <div>Venue Co-ordinator</div>
+  </div>
+
+  <div>
+    <div>
+      <img src="images/avatars/avatar7.jpg" alt="..." class="committeesavatar">
+    </div>
+    <div>Alphonsus Jeroen</div>
+    <div>Equipment Co-ordinator</div>
+  </div>
+
+  <div>
+    <div>
+      <img src="images/avatars/avatar8.jpg" alt="..." class="committeesavatar">
+    </div>
+    <div>Mercia Catherina</div>
+    <div>Promotions Co-ordinator</div>
+  </div>
+
+  <div>
+    <div>
+      <img src="images/avatars/avatar9.jpg" alt="..." class="committeesavatar">
+    </div>
+    <div>Jaron Manish</div>
+    <div>Officials Co-ordinator</div>
+  </div>
+
+  <div>
+    <div>
+      <img src="images/avatars/avatar10.jpg" alt="..." class="committeesavatar">
+    </div>
+    <div>Caroline Iago</div>
+    <div>Hospitality Co-ordinator</div>
+  </div>
+
+  <div>
+    <div>
+      <img src="images/avatars/avatar11.jpg" alt="..." class="committeesavatar">
+    </div>
+    <div>Macauley Geir</div>
+    <div>Merchandising Co-ordinator</div>
+  </div>
+
 </div>
 
 <!-- SPONSOR SECTION -->
