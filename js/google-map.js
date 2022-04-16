@@ -5,9 +5,8 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     // Set the latitude and longtitude to bandar seri begawan
-    var myLatlng = new google.maps.LatLng(4.903052, 114.939819);
-    // 39.399872
-    // -8.224454
+    var myLatlng = new google.maps.LatLng(4.919962851783638, 114.94385833863448);
+    // 4.919962851783638, 114.94385833863448
     
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
@@ -19,19 +18,21 @@ function init() {
         // How you would like to style the map. 
         scrollwheel: false,
         styles: [
+        {
+            "featureType": "administrative.country",
+            "elementType": "geometry",
+            "stylers": [
             {
-                "featureType": "administrative.country",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "visibility": "simplified"
-                    },
-                    {
-                        "hue": "#ff0000"
-                    }
-                ]
+                "visibility": "simplified"
+            },
+            {
+                "hue": "#ff0000"
             }
+            ]
+        }
         ]
+
+
     };
 
     
@@ -59,4 +60,5 @@ function init() {
     }
     
 }
+
 google.maps.event.addDomListener(window, 'load', init);
