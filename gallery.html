@@ -17,63 +17,60 @@
   <link rel="stylesheet" type="text/css" href="css/simple-lightbox.css">
 
   <style>
-      #banner {width: 100%;}
+    #banner {width: 100%;}
 
     .navbar {
-    border-radius: 0 0 10px 10px;
-    width: 100%;
-  }
+      border-radius: 0 0 10px 10px;
+      width: 100%;}
 
     .navbar2 {
-    padding-bottom: 20px;
-  }
+      padding-bottom: 20px;}
 
 
-  li{
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+    li{
+      margin-left: 10px;
+      margin-right: 10px;}
 
-          body {background-color: #fcd152;}
+    body {background-color: #fcd152;}
 
-          .gallery-container{
-            max-width: 80%;
-            text-align: center;
-            margin: auto;}
+    .gallery-container{
+      max-width: 80%;
+      text-align: center;
+      margin: auto;}
 
-            .gallery a img {
-              width: 270px;
-              height: 180px;
-              margin: 5px;
-              border: 2px solid #fff;
-              -webkit-transition: -webkit-transform .15s ease;
-              -moz-transition: -moz-transform .15s ease;
-              -o-transition: -o-transform .15s ease;
-              -ms-transition: -ms-transform .15s ease;
-              transition: transform .15s ease;
-              position: relative;}
+    .gallery a img {
+      width: 270px;
+      height: 180px;
+      margin: 5px;
+      border: 2px solid #fff;
+      -webkit-transition: -webkit-transform .15s ease;
+      -moz-transition: -moz-transform .15s ease;
+      -o-transition: -o-transform .15s ease;
+      -ms-transition: -ms-transform .15s ease;
+      transition: transform .15s ease;
+      position: relative;}
 
-              .clear {clear: both;}
+    .clear {clear: both;}
 
-              a {
-                color: #009688;
-                text-decoration: none;}
+    a {
+      color: #009688;
+      text-decoration: none;}
 
-                a:hover {
-                  color: #01695f;
-                  text-decoration: none;}
+    a:hover {
+      color: #01695f;
+      text-decoration: none;}
 
-                  .card{
-                    max-width: 600px;
-                    margin: auto;}
+    .card{
+        max-width: 600px;
+        margin: auto;}
 
-                    .btn-warning{margin: 10px 5px;}
-                  </style>
-                </head>
-                <body>
+    .btn-warning{margin: 10px 5px;}
+  </style>
+</head>
+<body>
 
-                  <!-- Navigation Bar -->
 
+  <!-- Navigation Bar -->
   <div class="sticky-top" >
     <div class="container navbar2 sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -111,94 +108,102 @@
     </div>
   </div>
 
-                  <div class="gallery-container">
-                    <div class="card mb-3">
-                      <!-- <h1 class="card-title">Gallery</h1> -->
-                      <div align="center">
-                        <button class="btn btn-warning filter-button" data-filter="all">All</button>
-                        <button class="btn btn-warning filter-button" data-filter="brunei-muara">Brunei-Muara</button>
-                        <button class="btn btn-warning  filter-button" data-filter="tutong">Tutong</button>
-                        <button class="btn btn-warning  filter-button" data-filter="belait">Belait</button>
-                        <button class="btn btn-warning filter-button" data-filter="temburong">Temburong</button>
-                        <button class="btn btn-warning  filter-button" data-filter="events">Events</button>
-                      </div>
-                    </div>
-                    <div class="gallery mb-5">
-                      <!-- Temburong -->
-                      <a href="images/Temburong/t-1.jpg"><img src="images/Temburong/t-1.jpg" alt="" title="Temburong River" class="filter temburong" /></a>
 
-                      <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Ulu Temburong National Park Bridge" class="filter temburong" /></a>
+  <div class="gallery-container">
 
-                      <a href="images/Temburong/t-4.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="The Pedestrian Mall Temburong" class="filter temburong" /></a>
+    <!-- Filter Button -->
+    <div class="card mb-3">
+      <div align="center">
+        <button class="btn btn-warning filter-button" data-filter="all">All</button>
+        <button class="btn btn-warning filter-button" data-filter="brunei-muara">Brunei-Muara</button>
+        <button class="btn btn-warning  filter-button" data-filter="tutong">Tutong</button>
+        <button class="btn btn-warning  filter-button" data-filter="belait">Belait</button>
+        <button class="btn btn-warning filter-button" data-filter="temburong">Temburong</button>
+        <button class="btn btn-warning  filter-button" data-filter="events">Events</button>
+      </div>
+    </div>
 
-                      <a href="images/Temburong/t-5.jpg"><img src="images/Temburong/t-5.jpg" alt="" title="Temburong River" class="filter temburong" /></a>
+    <!-- Responsive Gallery with popup (Bootstrap & JQuery) -->
+    <!-- https://www.jqueryscript.net/lightbox/Responsive-Touch-enabled-jQuery-Image-Lightbox-Plugin.html -->
+    <div class="gallery mb-5">
+      <!-- Temburong -->
+      <a href="images/Temburong/t-1.jpg"><img src="images/Temburong/t-1.jpg" alt="" title="Temburong River" class="filter temburong" /></a>
 
-                      <!-- Brunei-Muara -->
-                      <a href="images/brunei-muara/ayer.jpg"><img src="images/brunei-muara/ayer.jpg" alt="" title="Regatta Event Kampong Ayer" class="filter brunei-muara" /></a>
+      <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Ulu Temburong National Park Bridge" class="filter temburong" /></a>
 
-                      <a href="images/brunei-muara/eco.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Eco Coridor Park, Bandar Seri Begawan" class="filter brunei-muara" /></a>
+      <a href="images/Temburong/t-4.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="The Pedestrian Mall Temburong" class="filter temburong" /></a>
 
-                      <a href="images/brunei-muara/jp.jpg"><img src="images/brunei-muara/jp.jpg" alt="" title="Jerudong Park Playground" class="filter brunei-muara" /></a>
+      <a href="images/Temburong/t-5.jpg"><img src="images/Temburong/t-5.jpg" alt="" title="Temburong River" class="filter temburong" /></a>
 
-                      <a href="images/brunei-muara/tasek-lama.jpg"><img src="images/brunei-muara/tasek-lama.jpg" alt="" title="Tasek Lama Water fall" class="filter brunei-muara" /></a>
+      <!-- Brunei-Muara -->
+      <a href="images/brunei-muara/ayer.jpg"><img src="images/brunei-muara/ayer.jpg" alt="" title="Regatta Event Kampong Ayer" class="filter brunei-muara" /></a>
 
-                      <!-- Tutong -->
-                      <a href="images/tutong/beach.jpg"><img src="images/tutong/beach.jpg" alt="" title="Tutong Beach" class="filter tutong" /></a>
+      <a href="images/brunei-muara/eco.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Eco Coridor Park, Bandar Seri Begawan" class="filter brunei-muara" /></a>
 
-                      <a href="images/tutong/lake.jpg"><img src="images/tutong/lake.jpg" alt="" title="Tasek Merimbun Tutong" class="filter tutong" /></a>
+      <a href="images/brunei-muara/jp.jpg"><img src="images/brunei-muara/jp.jpg" alt="" title="Jerudong Park Playground" class="filter brunei-muara" /></a>
 
-                      <a href="images/tutong/thursday-market.jpg"><img src="images/tutong/thursday-market.jpg" alt="Tutong Thursday Market" title="Tutong Thursday Market" class="filter tutong" /></a>
+      <a href="images/brunei-muara/tasek-lama.jpg"><img src="images/brunei-muara/tasek-lama.jpg" alt="" title="Tasek Lama Water fall" class="filter brunei-muara" /></a>
 
-                      <!-- Belait -->
-                      <a href="images/belait/anduki-park.jpg"><img src="images/belait/anduki-park.jpg" alt="" title="Anduki Recreation Park" class="filter belait" /></a>
+      <!-- Tutong -->
+      <a href="images/tutong/beach.jpg"><img src="images/tutong/beach.jpg" alt="" title="Tutong Beach" class="filter tutong" /></a>
 
-                      <a href="images/belait/luagan.jpg"><img src="images/belait/luagan.jpg" alt="" title="Luagan Lake" class="filter belait" /></a>
+      <a href="images/tutong/lake.jpg"><img src="images/tutong/lake.jpg" alt="" title="Tasek Merimbun Tutong" class="filter tutong" /></a>
 
-                      <a href="images/belait/monument.jpg"><img src="images/belait/monument.jpg" alt="" title="Billion Barrel Monument" class="filter belait" /></a>
+      <a href="images/tutong/thursday-market.jpg"><img src="images/tutong/thursday-market.jpg" alt="Tutong Thursday Market" title="Tutong Thursday Market" class="filter tutong" /></a>
 
-                      <!-- Events -->
-                      <a href="images/events/coding-3.jpg"><img src="images/Events/coding-3.jpg" alt="" title="Coding Competition" class="filter events belait" /></a>
-                      <a href="images/events/esports.webp"><img src="images/Events/esports.webp" alt="" title="ESports Competition" class="filter events brunei-muara" /></a>
-                      <a href="images/events/fun-run1.jpg"><img src="images/Events/fun-run1.jpg" alt="" title="Marathon Contest" class="filter events brunei-muara" /></a>
-                      <div class="clear"></div>
-                    </div>
+      <!-- Belait -->
+      <a href="images/belait/anduki-park.jpg"><img src="images/belait/anduki-park.jpg" alt="" title="Anduki Recreation Park" class="filter belait" /></a>
 
-                  </div>
-                  <script src="js/simple-lightbox.js"></script>
-                  <script>
-                    (function() {
-                      var $gallery = new SimpleLightbox('.gallery a', {
-                        close: true,
-                      });
-                    })();
-                  </script>
-                  <script type="text/javascript">
-                    $(document).ready(function(){
+      <a href="images/belait/luagan.jpg"><img src="images/belait/luagan.jpg" alt="" title="Luagan Lake" class="filter belait" /></a>
 
-                      $(".filter-button").click(function(){
-                        var value = $(this).attr('data-filter');
+      <a href="images/belait/monument.jpg"><img src="images/belait/monument.jpg" alt="" title="Billion Barrel Monument" class="filter belait" /></a>
 
-                        if(value == "all")
-                        {
+      <!-- Events -->
+      <a href="images/events/coding-3.jpg"><img src="images/Events/coding-3.jpg" alt="" title="Coding Competition" class="filter events belait" /></a>
+      <a href="images/events/esports.webp"><img src="images/Events/esports.webp" alt="" title="ESports Competition" class="filter events brunei-muara" /></a>
+      <a href="images/events/fun-run1.jpg"><img src="images/Events/fun-run1.jpg" alt="" title="Marathon Contest" class="filter events brunei-muara" /></a>
+      <div class="clear"></div>
+    </div>
 
-                          $('.filter').show('1000');
-                        }
-                        else
-                        {
+  </div>
+  <!-- JS for gallery -->
+  <script src="js/simple-lightbox.js"></script>
+  <script>
+    (function() {
+      var $gallery = new SimpleLightbox('.gallery a', {
+        close: true,
+      });
+    })();
+  </script>
 
-                          $(".filter").not('.'+value).hide('3000');
-                          $('.filter').filter('.'+value).show('3000');
+  <!-- Filter button JS -->
+  <script type="text/javascript">
+    $(document).ready(function(){
 
-                        }
-                      });
+      $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
 
-                      if ($(".filter-button").removeClass("active")) {
-                        $(this).removeClass("active");
-                      }
-                      $(this).addClass("active");
+        if(value == "all")
+        {
 
-                    });
-                  </script>
+          $('.filter').show('1000');
+        }
+        else
+        {
+
+          $(".filter").not('.'+value).hide('3000');
+          $('.filter').filter('.'+value).show('3000');
+
+        }
+      });
+
+      if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+      }
+      $(this).addClass("active");
+
+    });
+  </script>
 
 
 

@@ -24,70 +24,60 @@
       height: 300px;
       display: block;
       margin-left: auto;
-      margin-right: auto;
-    }
+      margin-right: auto;}
 
     div>p {font-size: 15px;}
 
     #banner {
-      width: 100%;
-    }
+      width: 100%;}
 
     #cc{display: grid;
-          padding: 10px;
-          grid-template-columns: 1fr 1fr 1fr;
-          height: 50vh;
-          font-size: 25px;
-        }
+      padding: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+      height: 50vh;
+      font-size: 25px;}
 
     .navbar {
-    border-radius: 0 0 10px 10px;
-    width: 100%;
-  }
+      border-radius: 0 0 10px 10px;
+      width: 100%;}
 
     .navbar2 {
-    padding-bottom: 20px;
-  }
+      padding-bottom: 20px;}
 
 
     .space {width: 65%;
-          padding-bottom: 20px;
-          margin-left: auto;
-          margin-right: auto;
-          background-color: white;}
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;}
 
     .contain {
-      text-align: center;
-      }
+      text-align: center;}
 
     li{
       margin-left: 10px;
-      margin-right: 10px;
-    }
+      margin-right: 10px;}
 
     body {
-      background-color: #fcd152;
-    }
+      background-color: #fcd152;}
 
     #icon-color{
-      background-color: #FEA847;
-    }
+      background-color: #FEA847;}
 
     #feedbackModal .modal .custom .modal-dialog {
-    width: 50%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 0;}
+      width: 50%;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin: 0;}
 
     .form-control{
-      border: 1px solid black;
-    }
+      border: 1px solid black;}
   </style>
 </head>
 <body>
-
   <!-- Feedback Modal (Bootstrap and JQuery)-->
+  <!-- https://adnan-tech.com/feedback-pop-up-bootstrap-modal-javascript-php-mysql/ -->
   <div class="modal fade" id="feedbackModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -98,193 +88,195 @@
           </button>
         </div>
         <form class="needs-validation" novalidate>
-        <div class="modal-body">
-          
+          <div class="modal-body">
+
             <label for="recipient-name" class="col-form-label">Your Rating:</label>
 
             <!-- Star Rating (JQuery)-->
+            <!-- https://adnan-tech.com/feedback-pop-up-bootstrap-modal-javascript-php-mysql/ -->
             <div class='starrr'></div>
 
             <div class="mb-2">
               <div class="has-valid">
-              <label for="recipient-name" class="col-form-label">Name:</label>
-              <input type="text" class="form-control" id="recipient-name" required>
-              <div class="invalid-feedback">Please Enter Your Name</div>
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="recipient-name" required>
+                <div class="invalid-feedback">Please Enter Your Name</div>
               </div>
             </div>
 
             <div class="mb-2">
               <div class="has-valid">
-              <label for="recipient-name" class="col-form-label">Email:</label>
-              <input type="text" class="form-control" id="recipient-name" required>
-              <div class="invalid-feedback">Please Enter Your Email</div>
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="recipient-name" required>
+                <div class="invalid-feedback">Please Enter Your Email</div>
               </div>
             </div>
 
             <div class="form-group feedback-form" style="margin-top: 10px;">
               <div class="has-valid">
-              <label for="recipient-name" class="col-form-label">Your Feedback:</label>
-              <textarea name="" id="" cols="30" rows="10" class="form-control" required></textarea>
-              <div class="invalid-feedback">Please leave a feedback</div>
-              </div>
+                <label for="recipient-name" class="col-form-label">Your Feedback:</label>
+                <textarea name="" id="" cols="30" rows="10" class="form-control" required></textarea>
+                <div class="invalid-feedback">Please leave a feedback</div>
               </div>
             </div>
-
-            <input type="submit" class="btn btn-primary pull-right mr-3" value="Submit" />
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Navigation Bar (Bootstrap) -->
-  <div class="sticky-top" >
-    <div class="container navbar2 sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/icon.png" alt="icon" width="50px" height="50px">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="poi.html">Points of Interest</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact</a>
-              </li>
-            </ul>
           </div>
-        </div>
-      </nav>
+
+          <input type="submit" class="btn btn-primary pull-right mr-3" value="Submit" />
+        </form>
+      </div>
+
     </div>
   </div>
+</div>
 
-  <!-- Contact Us + Interactive Map (Bootstrap, JQuery, Popper and Google map API)-->
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-          <div class="wrapper">
-            <div class="row no-gutters mb-5">
-              <div class="col-md-7">
-                <div class="contact-wrap w-100 p-md-5 p-4">
-                  <h3 class="mb-4">Contact Us</h3>
-                  <div id="form-message-warning" class="mb-4"></div> 
-                  <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+<!-- Navigation Bar (Bootstrap) -->
+<div class="sticky-top" >
+  <div class="container navbar2 sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/icon.png" alt="icon" width="50px" height="50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="poi.html">Points of Interest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- Contact Us + Interactive Map (Bootstrap, JQuery, Popper and Google map API)-->
+<!-- https://colorlib.com/wp/template/contact-form-06/ -->
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="wrapper">
+          <div class="row no-gutters mb-5">
+            <div class="col-md-7">
+              <div class="contact-wrap w-100 p-md-5 p-4">
+                <h3 class="mb-4">Contact Us</h3>
+                <div id="form-message-warning" class="mb-4"></div> 
+                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="label" for="name">Full Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <label class="label" for="email">Email Address</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="label" for="subject">Subject</label>
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="label" for="#">Message</label>
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn btn-warning">
+                        <div class="submitting"></div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning float-right" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                          Send Feedback
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Icon -->
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="label" for="name">Full Name</label>
-                          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-                        </div>
-                      </div>
-                      <div class="col-md-6"> 
-                        <div class="form-group">
-                          <label class="label" for="email">Email Address</label>
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="subject">Subject</label>
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="#">Message</label>
-                          <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input type="submit" value="Send Message" class="btn btn-warning">
-                          <div class="submitting"></div>
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-warning float-right" data-bs-toggle="modal" data-bs-target="#feedbackModal">
-                            Send Feedback
-                          </button>
-                        </div>
-                      </div>
-                      <!-- Icon -->
-                      <div class="row">
-                        <!-- Address -->
-                        <div class="row-md-3">
-                          <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
-                              <span class="fa fa-map-marker"></span>
-                            </div>
-                            <div class="text">
-                              <p><span>Address: </span> Tourism Development Department, Level 3, Ministry of Primary Resources and Tourism, Jalan Menteri Besar BB3910, Brunei Darussalam</p><br>
-                            </div>
+                      <!-- Address -->
+                      <div class="row-md-3">
+                        <div class="dbox w-100 text-center">
+                          <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+                            <span class="fa fa-map-marker"></span>
+                          </div>
+                          <div class="text">
+                            <p><span>Address: </span> Tourism Development Department, Level 3, Ministry of Primary Resources and Tourism, Jalan Menteri Besar BB3910, Brunei Darussalam</p><br>
                           </div>
                         </div>
+                      </div>
 
-                        <!-- Phone -->
-                        <div class="row-md-3">
-                          <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
-                              <span class="fa fa-phone"></span>
-                            </div>
-                            <div class="text">
-                              <p><span>Phone</span><br><a href="tel://6732380022">+ 673 2380022</a></p><br>
-                            </div>
+                      <!-- Phone -->
+                      <div class="row-md-3">
+                        <div class="dbox w-100 text-center">
+                          <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+                            <span class="fa fa-phone"></span>
+                          </div>
+                          <div class="text">
+                            <p><span>Phone</span><br><a href="tel://6732380022">+ 673 2380022</a></p><br>
                           </div>
                         </div>
-                        <!-- Email -->
-                        <div class="row-md-3">
-                          <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
-                              <span class="fa fa-paper-plane"></span>
-                            </div>
-                            <div class="text">
-                              <p><span>Email</span><br><a href="mailto:info@tourism.gov.bn">info@tourism.gov.bn</a></p><br>
-                            </div>
+                      </div>
+                      <!-- Email -->
+                      <div class="row-md-3">
+                        <div class="dbox w-100 text-center">
+                          <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+                            <span class="fa fa-paper-plane"></span>
+                          </div>
+                          <div class="text">
+                            <p><span>Email</span><br><a href="mailto:info@tourism.gov.bn">info@tourism.gov.bn</a></p><br>
                           </div>
                         </div>
+                      </div>
 
-                        <!-- Website -->
-                        <div class="row-md-3">
-                          <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
-                              <span class="fa fa-globe"></span>
-                            </div>
-                            <div class="text">
-                              <p><span>Website</span><br><a href="www.bruneitourism.com">www.bruneitourism.com</a></p>
-                            </div>
+                      <!-- Website -->
+                      <div class="row-md-3">
+                        <div class="dbox w-100 text-center">
+                          <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+                            <span class="fa fa-globe"></span>
+                          </div>
+                          <div class="text">
+                            <p><span>Website</span><br><a href="www.bruneitourism.com">www.bruneitourism.com</a></p>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </form>
-                </div>
+                  </div>
+                </form>
               </div>
-              <div class="col-md-5 d-flex align-items-stretch">
-                <div id="map">
-                </div>
+            </div>
+            <div class="col-md-5 d-flex align-items-stretch">
+              <div id="map">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Link -->
+<!-- Link -->
   <!-- <div class="ml-5">
     <h4>Code source</h4>
     <p>Feedback Modal + Star Rating (Bootstrap & 2 JQuery): <a href="https://adnan-tech.com/feedback-pop-up-bootstrap-modal-javascript-php-mysql/" target=" ">link</a></p>
