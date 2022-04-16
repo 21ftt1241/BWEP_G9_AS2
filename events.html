@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Events</title>
+  <title>BDF 2022 | Events</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -20,14 +20,18 @@
     }
 
     .navbar {
-      border-radius: 10px;
-      max-width: 100%;
-    }
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+  }
 
-    .nvbar {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
+    .navbar2 {
+    padding-bottom: 20px;
+  }
+
+  li{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
     body {
       background-color: #fcd152;
@@ -76,45 +80,42 @@
   </style>
   </head>
   <body>
-    <!-- Navigation bar with Bootstrap -->
-    <div class="sticky-top" >
-      <div class="container nvbar sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="images/icon.png" alt="" width="50px" height="50px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="poi.html">Points of Interest</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
 
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
+    <!-- Navigation Bar -->
+
+  <div class="sticky-top" >
+    <div class="container navbar2 sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/icon.png" alt="icon" width="50px" height="50px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="poi.html">Places of Interest</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
+  </div>
     
     <!-- Card container -->
     <div class="container card-container">
