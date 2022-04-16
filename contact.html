@@ -4,8 +4,6 @@
   <title>BDF 2022 | Contact</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -89,58 +87,58 @@
 </head>
 <body>
 
-<!-- Feedback Modal -->
-<div class="modal fade" id="feedbackModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
+  <!-- Feedback Modal (Bootstrap and JQuery)-->
+  <div class="modal fade" id="feedbackModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-      <div class="modal-header">
-        <h3>Rate your feedback</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal">
-        </button>
+        <div class="modal-header">
+          <h3>Rate your feedback</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+          </button>
+        </div>
+        <form class="needs-validation" novalidate>
+        <div class="modal-body">
+          
+            <label for="recipient-name" class="col-form-label">Your Rating:</label>
+
+            <!-- Star Rating (JQuery)-->
+            <div class='starrr'></div>
+
+            <div class="mb-2">
+              <div class="has-valid">
+              <label for="recipient-name" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="recipient-name" required>
+              <div class="invalid-feedback">Please Enter Your Name</div>
+              </div>
+            </div>
+
+            <div class="mb-2">
+              <div class="has-valid">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="text" class="form-control" id="recipient-name" required>
+              <div class="invalid-feedback">Please Enter Your Email</div>
+              </div>
+            </div>
+
+            <div class="form-group feedback-form" style="margin-top: 10px;">
+              <div class="has-valid">
+              <label for="recipient-name" class="col-form-label">Your Feedback:</label>
+              <textarea name="" id="" cols="30" rows="10" class="form-control" required></textarea>
+              <div class="invalid-feedback">Please leave a feedback</div>
+              </div>
+              </div>
+            </div>
+
+            <input type="submit" class="btn btn-primary pull-right mr-3" value="Submit" />
+          </form>
+        </div>
+
       </div>
-      <form class="needs-validation" novalidate>
-      <div class="modal-body">
-        
-          <label for="recipient-name" class="col-form-label">Your Rating:</label>
-
-          <div class='starrr'></div>
-
-          <div class="mb-2">
-            <div class="has-valid">
-            <label for="recipient-name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="recipient-name" required>
-            <div class="invalid-feedback">Please Enter Your Name</div>
-            </div>
-          </div>
-
-          <div class="mb-2">
-            <div class="has-valid">
-            <label for="recipient-name" class="col-form-label">Email:</label>
-            <input type="text" class="form-control" id="recipient-name" required>
-            <div class="invalid-feedback">Please Enter Your Email</div>
-            </div>
-          </div>
-
-          <div class="form-group feedback-form" style="margin-top: 10px;">
-            <div class="has-valid">
-            <label for="recipient-name" class="col-form-label">Your Feedback:</label>
-            <textarea name="" id="" cols="30" rows="10" class="form-control" required></textarea>
-            <div class="invalid-feedback">Please leave a feedback</div>
-            </div>
-            </div>
-          </div>
-
-          <input type="submit" class="btn btn-primary pull-right mr-3" value="Submit" />
-        </form>
-      </div>
-
     </div>
   </div>
-</div>
 
-  <!-- Navigation Bar -->
-
+  <!-- Navigation Bar (Bootstrap) -->
   <div class="sticky-top" >
     <div class="container navbar2 sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -175,7 +173,7 @@
     </div>
   </div>
 
-  <!-- Contact Us Section -->
+  <!-- Contact Us + Interactive Map (Bootstrap, JQuery, Popper and Google map API)-->
   <section class="ftco-section">
     <div class="container">
       <div class="row justify-content-center">
@@ -225,48 +223,48 @@
                       <!-- Icon -->
                       <div class="row">
                         <!-- Address -->
-                        <div class="col-md-3">
+                        <div class="row-md-3">
                           <div class="dbox w-100 text-center">
                             <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
                               <span class="fa fa-map-marker"></span>
                             </div>
                             <div class="text">
-                              <p><span>Address: </span> Tourism Development Department, Level 3, Ministry of Primary Resources and Tourism, Jalan Menteri Besar BB3910, Brunei Darussalam</p>
+                              <p><span>Address: </span> Tourism Development Department, Level 3, Ministry of Primary Resources and Tourism, Jalan Menteri Besar BB3910, Brunei Darussalam</p><br>
                             </div>
                           </div>
                         </div>
 
                         <!-- Phone -->
-                        <div class="col-md-3">
+                        <div class="row-md-3">
                           <div class="dbox w-100 text-center">
                             <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
                               <span class="fa fa-phone"></span>
                             </div>
                             <div class="text">
-                              <p><span>Phone:</span> <a href="tel://6732380022">+ 673 2380022</a></p>
+                              <p><span>Phone</span><br><a href="tel://6732380022">+ 673 2380022</a></p><br>
                             </div>
                           </div>
                         </div>
                         <!-- Email -->
-                        <div class="col-md-3">
+                        <div class="row-md-3">
                           <div class="dbox w-100 text-center">
                             <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
                               <span class="fa fa-paper-plane"></span>
                             </div>
                             <div class="text">
-                              <p><span>Email:</span> <a href="mailto:info@tourism.gov.bn">info@tourism.gov.bn</a></p>
+                              <p><span>Email</span><br><a href="mailto:info@tourism.gov.bn">info@tourism.gov.bn</a></p><br>
                             </div>
                           </div>
                         </div>
 
                         <!-- Website -->
-                        <div class="col-md-3">
+                        <div class="row-md-3">
                           <div class="dbox w-100 text-center">
                             <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
                               <span class="fa fa-globe"></span>
                             </div>
                             <div class="text">
-                              <p><span>Website</span> <a href="www.bruneitourism.com">www.bruneitourism.com</a></p>
+                              <p><span>Website</span><br><a href="www.bruneitourism.com">www.bruneitourism.com</a></p>
                             </div>
                           </div>
                         </div>
@@ -286,14 +284,14 @@
     </div>
   </section>
 
-  <!-- Contact Us Dependencies -->
-  <script src="js/popper.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Link -->
+  <!-- <div class="ml-5">
+    <h4>Code source</h4>
+    <p>Feedback Modal + Star Rating (Bootstrap & 2 JQuery): <a href="https://adnan-tech.com/feedback-pop-up-bootstrap-modal-javascript-php-mysql/" target=" ">link</a></p>
+    <p>Contact Us Form + Interactive Map (Bootstrap & JQuery): <a href="https://colorlib.com/wp/template/contact-form-06/" target=" ">link</a></p>
+  </div> -->
 
-  <!-- Feedback Star Rating Javascript -->
+  <!-- JS function for Feedback Star Rating-->
   <script type="text/javascript">
     var ratings = 0;
     
@@ -310,7 +308,7 @@
     });
   </script>
 
-  <!-- JS Funtion for form validation -->
+  <!-- JS function for form validation -->
   <script type="text/javascript">
     (function () {
       'use strict'
@@ -332,6 +330,13 @@
       })
     })()
   </script>
+
+  <!-- Contact Us Dependencies -->
+  <script src="js/popper.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
 
   <!-- Star Rating dependencies -->
   <link rel="stylesheet" type="text/css" href="css/starrr.css" />
