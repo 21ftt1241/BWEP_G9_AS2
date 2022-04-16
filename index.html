@@ -10,8 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
   <style>
 
@@ -208,7 +210,27 @@
     width: 400px;
   }
 
-  @media only screen and (min-width: 480px) and (max-width: 991px){
+  .modalimg {
+    width: 300px;
+  }
+
+  .modal {
+    text-align: center;
+  }
+
+  .modal-header {
+    background-color: #fcd152;
+  }
+
+  small {
+    color: black;
+  }
+
+  .col-md-7 {
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1199px){
 
     .eventContent2 {
     display: grid;
@@ -250,7 +272,7 @@
 
     .imgsize {
       height: 190px;
-    }
+     }
 
     .eventContent2:nth-child(1){
       grid-area:  1 / 1 / 2 / 1;
@@ -293,7 +315,7 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- NAVIGATION BAR -->
 
   <div class="sticky-top" >
     <div class="container navbar2 sticky-top">
@@ -329,7 +351,7 @@
     </div>
   </div>
 
-  <!-- Banner -->
+  <!-- BANNER -->
   <div id="banner">
     <img src="images/landingpage.png" id="banner" class="img-fluid" alt="...">
   </div>
@@ -750,7 +772,7 @@
   <div class="flex-grow-1 ms-3">
     <div>Wigbrand Niilo</div>
     <div>&#9733; &#9733; &#9733; &#9733; &#9733;</div>
-    This is some content from a media component. You can replace this with any content and adjust it as needed.
+    Recommended for those who are looking to spend time with their family!
   </div>
   
 </div>
@@ -762,7 +784,7 @@
   <div class="flex-grow-1 ms-3">
     <div>Damodar Magnus</div>
     <div>&#9733; &#9733; &#9733; &#9733;</div>
-    This is some content from a media component. You can replace this with any content and adjust it as needed.
+    There are a lot of activities that you can participate and it was AMAZING!
   </div>
 </div>
 
@@ -773,7 +795,7 @@
   <div class="flex-grow-1 ms-3">
     <div>Heard Rita</div>
     <div>&#9733; &#9733; &#9733;</div>
-    This is some content from a media component. You can replace this with any content and adjust it as needed.
+    My children enjoyed the activities and I hope there will be more activities for children in the future.
   </div>
 </div>
 
@@ -787,70 +809,215 @@
 
 <div class="container committees">
 
-  <div>
-    <div>
+    <div type="button" data-bs-toggle="modal" data-bs-target="#carver">
+      <br>
       <img src="images/avatars/avatar4.jpg" alt="..." class="committeesavatar">
-      <div>Carver Ernest</div>
-      <div>Event Director</div>
+      <br><br>
+      <h4>Event Director</h4>
     </div>
-  </div>
 
-   <div>
-    <div>
+    <div type="button" data-bs-toggle="modal" data-bs-target="#adair">
+      <br>
       <img src="images/avatars/avatar5.jpg" alt="..." class="committeesavatar">
+      <br><br>
+      <h4>Programme Co-ordinator</h4>
     </div>
-    <div>Adair Lonnie</div>
-    <div>Programme Co-ordinator</div>
-  </div>
 
-  <div>
-    <div>
+    <div type="button" data-bs-toggle="modal" data-bs-target="#jazmine">
+      <br>
       <img src="images/avatars/avatar6.jpg" alt="..." class="committeesavatar">
+     <br><br>
+     <h4>Venue Co-ordinator</h4>
     </div>
-    <div>Jazmine Frances</div>
-    <div>Venue Co-ordinator</div>
-  </div>
 
-  <div>
-    <div>
+    <div type="button" data-bs-toggle="modal" data-bs-target="#alphonsus">
+      <br>
       <img src="images/avatars/avatar7.jpg" alt="..." class="committeesavatar">
+      <br><br>
+      <h4>Equipment Co-ordinator</h4>
     </div>
-    <div>Alphonsus Jeroen</div>
-    <div>Equipment Co-ordinator</div>
-  </div>
 
-  <div>
-    <div>
+    <div type="button" data-bs-toggle="modal" data-bs-target="#mercia">
+      <br>
       <img src="images/avatars/avatar8.jpg" alt="..." class="committeesavatar">
+      <br><br>
+      <h4>Promotions Co-ordinator</h4>
     </div>
-    <div>Mercia Catherina</div>
-    <div>Promotions Co-ordinator</div>
-  </div>
 
-  <div>
-    <div>
+    <div type="button" data-bs-toggle="modal" data-bs-target="#jaron">
+      <br>
       <img src="images/avatars/avatar9.jpg" alt="..." class="committeesavatar">
+      <br><br>
+      <h4>Officials Co-ordinator</h4>
     </div>
-    <div>Jaron Manish</div>
-    <div>Officials Co-ordinator</div>
-  </div>
 
-  <div>
-    <div>
+    <div type="button" data-bs-toggle="modal" data-bs-target="#caroline">
+      <br>
       <img src="images/avatars/avatar10.jpg" alt="..." class="committeesavatar">
+      <br><br>
+      <h4>Hospitality Co-ordinator</h4>
     </div>
-    <div>Caroline Iago</div>
-    <div>Hospitality Co-ordinator</div>
-  </div>
 
-  <div>
-    <div>
+    <div type="button" data-bs-toggle="modal" data-bs-target="#macauley">
+      <br>
       <img src="images/avatars/avatar11.jpg" alt="..." class="committeesavatar">
+      <br><br>
+      <h4>Merchandising Co-ordinator</h4>
     </div>
-    <div>Macauley Geir</div>
-    <div>Merchandising Co-ordinator</div>
-  </div>
 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="carver" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Event Director</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/avatars/avatar4.jpg" class="modalimg">
+        <br> <br>
+        <h3>Carver Ernest</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="adair" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Programme Co-ordinator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/avatars/avatar5.jpg" class="modalimg">
+        <br> <br>
+        <h3>Adair Lonnie</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="jazmine" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Venue Co-ordinator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/avatars/avatar6.jpg" class="modalimg">
+        <br> <br>
+        <h3>Jazmine Frances</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="alphonsus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Equipment Co-ordinator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/avatars/avatar7.jpg" class="modalimg">
+        <br> <br>
+        <h3>Alphonsus Jeroen</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="mercia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Promotions Co-ordinator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/avatars/avatar8.jpg" class="modalimg">
+        <br> <br>
+        <h3>Mercia Catherina</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="jaron" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Officials Co-ordinator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/avatars/avatar9.jpg" class="modalimg">
+        <br> <br>
+        <h3>Jaron Manish</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="caroline" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hospitality Co-ordinator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/avatars/avatar10.jpg" class="modalimg">
+        <br> <br>
+        <h3>Caroline Iago</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="macauley" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Merchandising Co-ordinator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/avatars/avatar11.jpg" class="modalimg">
+        <br> <br>
+        <h3>Macauley Geir</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- SPONSOR SECTION -->
@@ -865,9 +1032,9 @@
         Partner With
       </h2>
 
-      <img class="partnerimg" src="images/partners/tourism.png">
+      <img data-bs-toggle="tooltip" title="Ministry of Primary Resources and Tourism" class="partnerimg" src="images/partners/tourism.png">
 
-      <img class="partnerimg" src="images/partners/youth.png">
+      <img data-bs-toggle="tooltip" title="Ministry of Culture, Youth and Sports" class="partnerimg" src="images/partners/youth.png">
 
     </div>
 
@@ -875,11 +1042,11 @@
       Sponsored by
     </h2>
 
-    <img class="partnerimg" src="images/partners/netcom.jpg">
+    <img data-bs-toggle="tooltip" title="Netcom Computer House" class="partnerimg" src="images/partners/netcom.jpg">
 
-    <img class="partnerimg" src="images/partners/dst.png">
+    <img data-bs-toggle="tooltip" title="DST" class="partnerimg" src="images/partners/dst.png">
 
-    <img class="partnerimg" src="images/partners/kingston.jpg">
+    <img data-bs-toggle="tooltip" title="Netcom Computer House" class="partnerimg" src="images/partners/kingston.jpg">
     
   </div>
 
@@ -887,60 +1054,61 @@
 
 <div class="p-4 bg-dark text-white text-center">
   <!-- Icon -->
-                      <div class="row">
-                        <!-- Address -->
-                        <div class="col-md-3">
-                          <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
-                              <span class="fa fa-map-marker"></span>
-                            </div>
-                            <div class="text">
-                              <span>Address</span>
-                              <p>Tourism Development Department, Level 3, Ministry of Primary Resources and Tourism, Jalan Menteri Besar BB3910, Brunei Darussalam</p>
-                            </div>
-                          </div>
-                        </div>
+    <div class="row">
+      <!-- Address -->
+      <div class="col-md-3">
+        <div class="dbox w-100 text-center">
+          <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+            <span class="fa fa-map-marker"></span>
+          </div>
+          <div class="text">
+            <span>Address</span>
+            <p>Tourism Development Department, Level 3, Ministry of Primary Resources and Tourism, Jalan Menteri Besar BB3910, Brunei Darussalam</p>
+          </div>
+        </div>
+      </div>
 
-                        <!-- Phone -->
-                        <div class="col-md-3">
-                          <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
-                              <span class="fa fa-phone"></span>
-                            </div>
-                            <div class="text">
-                              <span>Phone</span>
-                              <p><a href="tel://6732380022">+ 673 2380022</a></p>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Email -->
-                        <div class="col-md-3">
-                          <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
-                              <span class="fa fa-paper-plane"></span>
-                            </div>
-                            <div class="text">
-                              <span>Email</span>
-                              <p><a href="mailto:info@tourism.gov.bn">info@tourism.gov.bn</a></p>
-                            </div>
-                          </div>
-                        </div>
+  <!-- Phone -->
+  <div class="col-md-3">
+    <div class="dbox w-100 text-center">
+      <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+        <span class="fa fa-phone"></span>
+      </div>
+      <div class="text">
+        <span>Phone</span>
+        <p><a href="tel://6732380022">+ 673 2380022</a></p>
+      </div>
+    </div>
+  </div>
 
-                        <!-- Website -->
-                        <div class="col-md-3">
-                          <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
-                              <span class="fa fa-globe"></span>
-                            </div>
-                            <div class="text">
-                              <span>Website</span>
-                              <p><a href="www.bruneitourism.com">www.bruneitourism.com</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <hr>
-                      Copyright &#169; 2022 Brunei December Festival
+  <!-- Email -->
+  <div class="col-md-3">
+    <div class="dbox w-100 text-center">
+      <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+        <span class="fa fa-paper-plane"></span>
+      </div>
+      <div class="text">
+        <span>Email</span>
+        <p><a href="mailto:info@tourism.gov.bn">info@tourism.gov.bn</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Website -->
+  <div class="col-md-3">
+    <div class="dbox w-100 text-center">
+      <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+        <span class="fa fa-globe"></span>
+      </div>
+      <div class="text">
+        <span>Website</span>
+        <p><a href="www.bruneitourism.com">www.bruneitourism.com</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+Copyright &#169; 2022 Brunei December Festival
 </div>
 
 </body>
