@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Gallery</title>
+  <title>BDF 2022 | Gallery</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
@@ -19,63 +19,68 @@
   <style>
       #banner {width: 100%;}
 
-      .navbar {
-        border-radius: 10px;
-        width: 100%;}
+    .navbar {
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+  }
 
-      .nvbar {
-        padding-top: 20px;
-        padding-bottom: 20px;}
+    .navbar2 {
+    padding-bottom: 20px;
+  }
 
-      li{
-        margin-left: 10px;
-        margin-right: 10px;}
 
-      body {background-color: #fcd152;}
+  li{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-      .gallery-container{
-        max-width: 80%;
-        text-align: center;
-        margin: auto;}
+          body {background-color: #fcd152;}
 
-      .gallery a img {
-        width: 270px;
-        height: 180px;
-        margin: 5px;
-        border: 2px solid #fff;
-        -webkit-transition: -webkit-transform .15s ease;
-        -moz-transition: -moz-transform .15s ease;
-        -o-transition: -o-transform .15s ease;
-        -ms-transition: -ms-transform .15s ease;
-        transition: transform .15s ease;
-        position: relative;}
+          .gallery-container{
+            max-width: 80%;
+            text-align: center;
+            margin: auto;}
 
-      .clear {clear: both;}
+            .gallery a img {
+              width: 270px;
+              height: 180px;
+              margin: 5px;
+              border: 2px solid #fff;
+              -webkit-transition: -webkit-transform .15s ease;
+              -moz-transition: -moz-transform .15s ease;
+              -o-transition: -o-transform .15s ease;
+              -ms-transition: -ms-transform .15s ease;
+              transition: transform .15s ease;
+              position: relative;}
 
-      a {
-        color: #009688;
-        text-decoration: none;}
+              .clear {clear: both;}
 
-      a:hover {
-        color: #01695f;
-        text-decoration: none;}
+              a {
+                color: #009688;
+                text-decoration: none;}
 
-      .card{
-        max-width: 600px;
-         margin: auto;}
+                a:hover {
+                  color: #01695f;
+                  text-decoration: none;}
 
-      .btn-warning{margin: 10px 5px;}
-  </style>
-</head>
-<body>
+                  .card{
+                    max-width: 600px;
+                    margin: auto;}
 
-  <!-- Navigation Bar (Bootstrap) -->
+                    .btn-warning{margin: 10px 5px;}
+                  </style>
+                </head>
+                <body>
+
+                  <!-- Navigation Bar -->
+
   <div class="sticky-top" >
-    <div class="container nvbar sticky-top">
+    <div class="container navbar2 sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="images/icon.png" alt="" width="50px" height="50px">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/icon.png" alt="icon" width="50px" height="50px">
+
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -92,7 +97,8 @@
                 <a class="nav-link active" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="poi.html">Points of Interest</a>
+                <a class="nav-link" href="poi.html">Places of Interest</a>
+
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -105,101 +111,96 @@
     </div>
   </div>
 
-  <!-- Simple Gallery Modal with Zoom (Bootstrap and JQuery):
-    https://www.jqueryscript.net/lightbox/Responsive-Touch-enabled-jQuery-Image-Lightbox-Plugin.html -->
-  <div class="gallery-container">
-    <div class="card mb-3">
+                  <div class="gallery-container">
+                    <div class="card mb-3">
+                      <!-- <h1 class="card-title">Gallery</h1> -->
+                      <div align="center">
+                        <button class="btn btn-warning filter-button" data-filter="all">All</button>
+                        <button class="btn btn-warning filter-button" data-filter="brunei-muara">Brunei-Muara</button>
+                        <button class="btn btn-warning  filter-button" data-filter="tutong">Tutong</button>
+                        <button class="btn btn-warning  filter-button" data-filter="belait">Belait</button>
+                        <button class="btn btn-warning filter-button" data-filter="temburong">Temburong</button>
+                        <button class="btn btn-warning  filter-button" data-filter="events">Events</button>
+                      </div>
+                    </div>
+                    <div class="gallery mb-5">
+                      <!-- Temburong -->
+                      <a href="images/Temburong/t-1.jpg"><img src="images/Temburong/t-1.jpg" alt="" title="Temburong River" class="filter temburong" /></a>
 
-      <!-- Filter Button (Bootstrap & JQuery-->
-      <!-- https://bootsnipp.com/snippets/GzKKE -->
-      <div align="center">
-        <button class="btn btn-warning filter-button" data-filter="all">All</button>
-        <button class="btn btn-warning filter-button" data-filter="brunei-muara">Brunei-Muara</button>
-        <button class="btn btn-warning  filter-button" data-filter="tutong">Tutong</button>
-        <button class="btn btn-warning  filter-button" data-filter="belait">Belait</button>
-        <button class="btn btn-warning filter-button" data-filter="temburong">Temburong</button>
-        <button class="btn btn-warning  filter-button" data-filter="events">Events</button>
-      </div>
-    </div>
-    <div class="gallery mb-5">
-      <!-- Temburong -->
-        <a href="images/Temburong/t-1.jpg"><img src="images/Temburong/t-1.jpg" alt="" title="Temburong River" class="filter temburong" /></a>
+                      <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Ulu Temburong National Park Bridge" class="filter temburong" /></a>
 
-        <a href="images/Temburong/t-2.jpg"><img src="images/Temburong/t-2.jpg" alt="" title="Ulu Temburong National Park Bridge" class="filter temburong" /></a>
+                      <a href="images/Temburong/t-4.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="The Pedestrian Mall Temburong" class="filter temburong" /></a>
 
-        <a href="images/Temburong/t-4.jpg"><img src="images/Temburong/t-4.jpg" alt="" title="The Pedestrian Mall Temburong" class="filter temburong" /></a>
+                      <a href="images/Temburong/t-5.jpg"><img src="images/Temburong/t-5.jpg" alt="" title="Temburong River" class="filter temburong" /></a>
 
-        <a href="images/Temburong/t-5.jpg"><img src="images/Temburong/t-5.jpg" alt="" title="Temburong River" class="filter temburong" /></a>
+                      <!-- Brunei-Muara -->
+                      <a href="images/brunei-muara/ayer.jpg"><img src="images/brunei-muara/ayer.jpg" alt="" title="Regatta Event Kampong Ayer" class="filter brunei-muara" /></a>
 
-      <!-- Brunei-Muara -->
-        <a href="images/brunei-muara/ayer.jpg"><img src="images/brunei-muara/ayer.jpg" alt="" title="Regatta Event Kampong Ayer" class="filter brunei-muara" /></a>
+                      <a href="images/brunei-muara/eco.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Eco Coridor Park, Bandar Seri Begawan" class="filter brunei-muara" /></a>
 
-        <a href="images/brunei-muara/eco.jpg"><img src="images/brunei-muara/eco.jpg" alt="" title="Eco Coridor Park, Bandar Seri Begawan" class="filter brunei-muara" /></a>
+                      <a href="images/brunei-muara/jp.jpg"><img src="images/brunei-muara/jp.jpg" alt="" title="Jerudong Park Playground" class="filter brunei-muara" /></a>
 
-        <a href="images/brunei-muara/jp.jpg"><img src="images/brunei-muara/jp.jpg" alt="" title="Jerudong Park Playground" class="filter brunei-muara" /></a>
+                      <a href="images/brunei-muara/tasek-lama.jpg"><img src="images/brunei-muara/tasek-lama.jpg" alt="" title="Tasek Lama Water fall" class="filter brunei-muara" /></a>
 
-        <a href="images/brunei-muara/tasek-lama.jpg"><img src="images/brunei-muara/tasek-lama.jpg" alt="" title="Tasek Lama Water fall" class="filter brunei-muara" /></a>
+                      <!-- Tutong -->
+                      <a href="images/tutong/beach.jpg"><img src="images/tutong/beach.jpg" alt="" title="Tutong Beach" class="filter tutong" /></a>
 
-      <!-- Tutong -->
-        <a href="images/tutong/beach.jpg"><img src="images/tutong/beach.jpg" alt="" title="Tutong Beach" class="filter tutong" /></a>
+                      <a href="images/tutong/lake.jpg"><img src="images/tutong/lake.jpg" alt="" title="Tasek Merimbun Tutong" class="filter tutong" /></a>
 
-        <a href="images/tutong/lake.jpg"><img src="images/tutong/lake.jpg" alt="" title="Tasek Merimbun Tutong" class="filter tutong" /></a>
+                      <a href="images/tutong/thursday-market.jpg"><img src="images/tutong/thursday-market.jpg" alt="Tutong Thursday Market" title="Tutong Thursday Market" class="filter tutong" /></a>
 
-        <a href="images/tutong/thursday-market.jpg"><img src="images/tutong/thursday-market.jpg" alt="Tutong Thursday Market" title="Tutong Thursday Market" class="filter tutong" /></a>
+                      <!-- Belait -->
+                      <a href="images/belait/anduki-park.jpg"><img src="images/belait/anduki-park.jpg" alt="" title="Anduki Recreation Park" class="filter belait" /></a>
 
-      <!-- Belait -->
-        <a href="images/belait/anduki-park.jpg"><img src="images/belait/anduki-park.jpg" alt="" title="Anduki Recreation Park" class="filter belait" /></a>
+                      <a href="images/belait/luagan.jpg"><img src="images/belait/luagan.jpg" alt="" title="Luagan Lake" class="filter belait" /></a>
 
-        <a href="images/belait/luagan.jpg"><img src="images/belait/luagan.jpg" alt="" title="Luagan Lake" class="filter belait" /></a>
+                      <a href="images/belait/monument.jpg"><img src="images/belait/monument.jpg" alt="" title="Billion Barrel Monument" class="filter belait" /></a>
 
-        <a href="images/belait/monument.jpg"><img src="images/belait/monument.jpg" alt="" title="Billion Barrel Monument" class="filter belait" /></a>
+                      <!-- Events -->
+                      <a href="images/events/coding-3.jpg"><img src="images/Events/coding-3.jpg" alt="" title="Coding Competition" class="filter events belait" /></a>
+                      <a href="images/events/esports.webp"><img src="images/Events/esports.webp" alt="" title="ESports Competition" class="filter events brunei-muara" /></a>
+                      <a href="images/events/fun-run1.jpg"><img src="images/Events/fun-run1.jpg" alt="" title="Marathon Contest" class="filter events brunei-muara" /></a>
+                      <div class="clear"></div>
+                    </div>
 
-      <!-- Events -->
-        <a href="images/events/coding-3.jpg"><img src="images/Events/coding-3.jpg" alt="" title="Coding Competition" class="filter events belait" /></a>
-        <a href="images/events/esports.webp"><img src="images/Events/esports.webp" alt="" title="ESports Competition" class="filter events brunei-muara" /></a>
-        <a href="images/events/fun-run1.jpg"><img src="images/Events/fun-run1.jpg" alt="" title="Marathon Contest" class="filter events brunei-muara" /></a>
-      <div class="clear"></div>
-    </div>
-  </div>
+                  </div>
+                  <script src="js/simple-lightbox.js"></script>
+                  <script>
+                    (function() {
+                      var $gallery = new SimpleLightbox('.gallery a', {
+                        close: true,
+                      });
+                    })();
+                  </script>
+                  <script type="text/javascript">
+                    $(document).ready(function(){
 
-  <!-- Popup Gallery JS Function-->
-  <script src="js/simple-lightbox.js"></script>
-  <script>
-    (function() {
-      var $gallery = new SimpleLightbox('.gallery a', {
-        close: true,
-      });
-    })();
-  </script>
+                      $(".filter-button").click(function(){
+                        var value = $(this).attr('data-filter');
 
-  <!-- Filter Button function -->
-  <script type="text/javascript">
-    $(document).ready(function(){
+                        if(value == "all")
+                        {
 
-      $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
+                          $('.filter').show('1000');
+                        }
+                        else
+                        {
 
-        if(value == "all")
-        {
+                          $(".filter").not('.'+value).hide('3000');
+                          $('.filter').filter('.'+value).show('3000');
 
-          $('.filter').show('1000');
-        }
-        else
-        {
+                        }
+                      });
 
-          $(".filter").not('.'+value).hide('3000');
-          $('.filter').filter('.'+value).show('3000');
+                      if ($(".filter-button").removeClass("active")) {
+                        $(this).removeClass("active");
+                      }
+                      $(this).addClass("active");
 
-        }
-      });
+                    });
+                  </script>
 
-      if ($(".filter-button").removeClass("active")) {
-        $(this).removeClass("active");
-      }
-      $(this).addClass("active");
 
-    });
-  </script>
 
 </body>
 </html>

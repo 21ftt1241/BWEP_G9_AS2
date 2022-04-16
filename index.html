@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
+  <title>BDF 2022 | Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,19 +26,22 @@
     text-align: center;
     font-size: 80px;
     padding: 20px;
-}
+  }
+
+  h2 {
+    margin-top: 50px;
+  }
 
   #banner {
     width: 100%;
   }
 
   .navbar {
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     width: 100%;
   }
 
-  .nvbar {
-    padding-top: 20px;
+  .navbar2 {
     padding-bottom: 20px;
   }
 
@@ -108,11 +111,14 @@
     border-radius: 10px;
   }
 
-  .sponsor {
+  .partnersponsor {
     width: auto;
     background-color: white;
-    height: 400px;
+    height: auto;
     margin-bottom: 0;
+    margin-top: 100px;
+    padding-top: 25px;
+    padding-bottom: 50px;
   }
 
   .imgsize {
@@ -142,7 +148,7 @@
     text-align: center;
   }
 
-  h5 {
+  .card-body > h5 {
     background-color: rgba(255,255,255,0.5);
     padding: 10px;
     color: black;
@@ -198,7 +204,34 @@
     grid-area: 4 / 2 / 5 / 3;
   }
 
-  @media only screen and (max-width: 479px) {
+  .partnerimg {
+    width: 400px;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 991px){
+
+    .eventContent2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .committees {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .committees>div:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .committees>div:nth-child(8) {
+    grid-area: 8 / 1 / 9 / 2;
+  }
+
+}
+
+  @media only screen and (max-width: 767px) {
 
     .comingsoon {
       font-size: 50px;
@@ -238,164 +271,176 @@
     .viewmore {
     background-color: rgba(255,193,7,255);
   }
+
+  .committees {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 1fr);
   }
+
+  .committees>div:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .committees>div:nth-child(8) {
+    grid-area: 8 / 1 / 9 / 2;
+  }
+
+}
 
 
 
   </style>
 </head>
 <body>
-  <div class="sticky-top" >
-<div class="container nvbar sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="images/icon.png" alt="" width="50px" height="50px">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="events.html">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="poi.html">Points of Interest</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
 
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <!-- Navigation Bar -->
+
+  <div class="sticky-top" >
+    <div class="container navbar2 sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/icon.png" alt="icon" width="50px" height="50px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="poi.html">Places of Interest</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
-</nav>
-</div>
-</div>
 
-<div id="banner">
-  <img src="images/landingpage.png" id="banner" class="img-fluid" alt="...">
-</div>
+  <!-- Banner -->
+  <div id="banner">
+    <img src="images/landingpage.png" id="banner" class="img-fluid" alt="...">
+  </div>
 
+  <!-- CAROUSEL UPCOMING EVENTS -->
 
-<!-- CAROUSEL UPCOMING EVENTS -->
+  <div class="container">
+    <h1>Upcoming Events</h1>
+  </div>
 
-<div class="container">
-  <h1>Upcoming Events</h1>
-</div>
-
-<div class="container carousel slide" id="carouselUpcomingEvents" data-bs-ride="carousel">
+  <div class="container carousel slide" id="carouselUpcomingEvents" data-bs-ride="carousel">
 
   <!-- INDICATORS -->
 
-  <ol class="carousel-indicators">
+    <ol class="carousel-indicators">
 
-    <li data-bs-target="#carouselUpcomingEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
-    <li data-bs-target="#carouselUpcomingEvents" data-bs-slide-to="1" aria-label="Slide 2"></li>
-    <li data-bs-target="#carouselUpcomingEvents" data-bs-slide-to="2" aria-label="Slide 3"></li>
+      <li data-bs-target="#carouselUpcomingEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+      <li data-bs-target="#carouselUpcomingEvents" data-bs-slide-to="1" aria-label="Slide 2"></li>
+      <li data-bs-target="#carouselUpcomingEvents" data-bs-slide-to="2" aria-label="Slide 3"></li>
   
-  </ol>
+    </ol>
 
-  <div class="eventContent1">
+    <div class="eventContent1">
 
     <!-- PREVIOUS BUTTON -->
 
-    <div type="button" data-bs-target="#carouselUpcomingEvents" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </div>
+      <div type="button" data-bs-target="#carouselUpcomingEvents" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </div>
 
     <!-- CONTENT -->
 
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="eventContent2">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="eventContent2">
 
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-7">
-                <img src="images/events/fun-run1.jpg" class="img-fluid rounded-start imgsize" alt="...">
-              </div>
-              <div class="col-md-5">
-                <div class="card-body">
-                  <h4 class="card-title">Get Fit Marathon Challenge</h4>
-                  <h5 class="card-text">Dec 5 - Dec 12</h5>
-                  <p class="card-text"><small>Organized by AKIF Media Marketing and Event</small></p>
-                  <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="events.html#collapse1" role="button">View More</a>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="images/events/fun-run1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                </div>
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h4 class="card-title">Get Fit Marathon Challenge</h4>
+                    <h5 class="card-text">Dec 5 - Dec 12</h5>
+                    <p class="card-text"><small>Organized by AKIF Media Marketing and Event</small></p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-warning viewmore" href="events.html#collapse1" role="button">View More</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-7">
-                <img src="images/events/esports.webp" class="img-fluid rounded-start imgsize" alt="...">
-              </div>
-              <div class="col-md-5">
-                <div class="card-body">
-                  <h4 class="card-title">E-Sport Tournament</h4>
-                  <h5 class="card-text">Dec 5 - Dec 12</h5>
-                  <p class="card-text"><small>Organized by Jerudong Park Country Club</small></p>
-                  <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="events.html#collapse2" role="button">View More</a>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="images/events/esports.webp" class="img-fluid rounded-start imgsize" alt="...">
+                </div>
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h4 class="card-title">E-Sport Tournament</h4>
+                    <h5 class="card-text">Dec 5 - Dec 12</h5>
+                    <p class="card-text"><small>Organized by Jerudong Park Country Club</small></p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-warning viewmore" href="events.html#collapse2" role="button">View More</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
           
-         <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-7">
-                <img src="images/events/coding-3.jpg" class="img-fluid rounded-start imgsize" alt="...">
-              </div>
-              <div class="col-md-5">
-                <div class="card-body">
-                  <h4 class="card-title">Code Jam & Beginner's Workshop</h4>
-                  <h5 class="card-text">Dec 13 - Dec 20</h5>
-                  <p class="card-text"><small>Organized by Grominda Sdn Bhd</small></p>
-                  <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="events.html#collapse3" role="button">View More</a>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="images/events/coding-3.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                </div>
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h4 class="card-title">Code Jam & Beginner's Workshop</h4>
+                    <h5 class="card-text">Dec 13 - Dec 20</h5>
+                    <p class="card-text"><small>Organized by Grominda Sdn Bhd</small></p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-warning viewmore" href="events.html#collapse3" role="button">View More</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-           <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-7">
-                <img src="images/Temburong/temburong-bridge.jpg" class="img-fluid rounded-start imgsize" alt="...">
-              </div>
-              <div class="col-md-5">
-                <div class="card-body">
-                  <h4 class="card-title">Temburong Ultra Marathon</h4>
-                  <h5 class="card-text">Dec 21</h5>
-                  <p class="card-text"><small>Organized by Begawan Athlete</small></p>
-                  <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="events.html#collapse4" role="button">View More</a>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="images/Temburong/temburong-bridge.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                </div>
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h4 class="card-title">Temburong Ultra Marathon</h4>
+                    <h5 class="card-text">Dec 21</h5>
+                    <p class="card-text"><small>Organized by Begawan Athlete</small></p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-warning viewmore" href="events.html#collapse4" role="button">View More</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
-      </div>
 
       <div class="carousel-item">
         <div class="eventContent2">
@@ -499,7 +544,7 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-7">
-                <img src="images/v-1.jpg" class="img-fluid rounded-start imgsize" alt="...">
+                <img src="images/events/cooking.jpg" class="img-fluid rounded-start imgsize" alt="...">
               </div>
               <div class="col-md-5">
                 <div class="card-body">
@@ -810,12 +855,92 @@
 
 <!-- SPONSOR SECTION -->
 
-<div class="sponsor m100 text-center">
-  SPONSOR SECTION
+<div class="partnersponsor text-center">
+
+  <div class="container">
+
+    <div id="partner">
+
+      <h2>
+        Partner With
+      </h2>
+
+      <img class="partnerimg" src="images/partners/tourism.png">
+
+      <img class="partnerimg" src="images/partners/youth.png">
+
+    </div>
+
+    <h2>
+      Sponsored by
+    </h2>
+
+    <img class="partnerimg" src="images/partners/netcom.jpg">
+
+    <img class="partnerimg" src="images/partners/dst.png">
+
+    <img class="partnerimg" src="images/partners/kingston.jpg">
+    
+  </div>
+
 </div>
 
 <div class="p-4 bg-dark text-white text-center">
-  <p>Footer</p>
+  <!-- Icon -->
+                      <div class="row">
+                        <!-- Address -->
+                        <div class="col-md-3">
+                          <div class="dbox w-100 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+                              <span class="fa fa-map-marker"></span>
+                            </div>
+                            <div class="text">
+                              <span>Address</span>
+                              <p>Tourism Development Department, Level 3, Ministry of Primary Resources and Tourism, Jalan Menteri Besar BB3910, Brunei Darussalam</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="col-md-3">
+                          <div class="dbox w-100 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+                              <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="text">
+                              <span>Phone</span>
+                              <p><a href="tel://6732380022">+ 673 2380022</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-md-3">
+                          <div class="dbox w-100 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+                              <span class="fa fa-paper-plane"></span>
+                            </div>
+                            <div class="text">
+                              <span>Email</span>
+                              <p><a href="mailto:info@tourism.gov.bn">info@tourism.gov.bn</a></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Website -->
+                        <div class="col-md-3">
+                          <div class="dbox w-100 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center" id="icon-color">
+                              <span class="fa fa-globe"></span>
+                            </div>
+                            <div class="text">
+                              <span>Website</span>
+                              <p><a href="www.bruneitourism.com">www.bruneitourism.com</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                      Copyright &#169; 2022 Brunei December Festival
 </div>
 
 </body>
