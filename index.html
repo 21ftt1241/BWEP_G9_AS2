@@ -306,13 +306,14 @@
 
     }
   </style>
+
 </head>
 <body>
 
-  <!-- NAVIGATION BAR -->
+  <!-- NAVIGATION BAR (Bootstrap feature 1)-->
   <!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
   <div class="sticky-top" >
-    <div class="container navbar2 sticky-top">
+    <div class="container navbar2 sticky-top justify-content-between">
       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -350,12 +351,11 @@
     <img src="images/landingpage.png" id="banner" class="img-fluid" alt="...">
   </div>
 
-  <!-- CAROUSEL UPCOMING EVENTS -->
+  <!-- CAROUSEL UPCOMING EVENTS (Bootstrap feature 2)-->
   <!-- https://getbootstrap.com/docs/5.1/components/carousel/ -->
   <div class="container">
     <h1>Upcoming Events</h1>
   </div>
-
   <div class="container carousel slide" id="carouselUpcomingEvents" data-bs-ride="carousel">
 
     <!-- INDICATORS -->
@@ -597,162 +597,162 @@
 </div>
 
 
-<!-- CAROUSEL PREVIOUS EVENTS -->
-<!-- https://getbootstrap.com/docs/5.1/components/carousel/ -->
-<div class="container m100">
-  <h1>Previous Events</h1>
-</div>
+  <!-- CAROUSEL PREVIOUS EVENTS -->
+  <!-- https://getbootstrap.com/docs/5.1/components/carousel/ -->
+  <div class="container m100">
+    <h1>Previous Events</h1>
+  </div>
+  <div class="container carousel slide" id="carouselPreviousEvents" data-bs-ride="carousel">
 
-<div class="container carousel slide" id="carouselPreviousEvents" data-bs-ride="carousel">
+    <!-- INDICATORS -->
+    <ol class="carousel-indicators">
 
-  <!-- INDICATORS -->
-  <ol class="carousel-indicators">
+      <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+      <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="1" aria-label="Slide 2"></li>
+      <!-- <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="2" aria-label="Slide 3"></li> -->
 
-    <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
-    <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="1" aria-label="Slide 2"></li>
-    <!-- <li data-bs-target="#carouselPreviousEvents" data-bs-slide-to="2" aria-label="Slide 3"></li> -->
+    </ol>
 
-  </ol>
+    <!-- Carousel Content -->
+    <div class="eventContent1">
 
-  <div class="eventContent1">
+      <!-- PREVIOUS BUTTON -->
 
-    <!-- PREVIOUS BUTTON -->
+      <div type="button" data-bs-target="#carouselPreviousEvents" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </div>
 
-    <div type="button" data-bs-target="#carouselPreviousEvents" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </div>
+      <!-- CONTENT -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="eventContent2">
 
-    <!-- CONTENT -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="eventContent2">
-
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-7">
-                <img src="images/events/inno-hub.png" class="img-fluid rounded-start imgsize" alt="...">
-              </div>
-              <div class="col-md-5">
-                <div class="card-body">
-                  <h4 class="card-title">Innovation Hub</h4>
-                  <h5 class="card-text">2021</h5>
-                  <p class="card-text"><small>Organized by Seria Energy Lab</small></p>
-                  <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="events.html#collapse5" role="button">View More</a>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="images/events/inno-hub.png" class="img-fluid rounded-start imgsize" alt="...">
+                </div>
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h4 class="card-title">Innovation Hub</h4>
+                    <h5 class="card-text">2021</h5>
+                    <p class="card-text"><small>Organized by Seria Energy Lab</small></p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-warning viewmore" href="events.html#collapse5" role="button">View More</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-7">
-                <img src="images/events/bench-lab.jpeg" class="img-fluid rounded-start imgsize" alt="...">
-              </div>
-              <div class="col-md-5">
-                <div class="card-body">
-                  <h4 class="card-title">Inspire & Create</h4>
-                  <h5 class="card-text">2021</h5>
-                  <p class="card-text"><small>Organized by Bench Lab</small></p>
-                  <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="events.html#collapse6" role="button">View More</a>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="images/events/bench-lab.jpeg" class="img-fluid rounded-start imgsize" alt="...">
+                </div>
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h4 class="card-title">Inspire & Create</h4>
+                    <h5 class="card-text">2021</h5>
+                    <p class="card-text"><small>Organized by Bench Lab</small></p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-warning viewmore" href="events.html#collapse6" role="button">View More</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-7">
-                <img src="images/events/foto-maraton.png" class="img-fluid rounded-start imgsize" alt="...">
-              </div>
-              <div class="col-md-5">
-                <div class="card-body">
-                  <h4 class="card-title">Photo Marathon</h4>
-                  <h5 class="card-text">2021</h5>
-                  <p class="card-text"><small>Organized by Pusat Sejarah Brunei</small></p>
-                  <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="events.html#collapse7" role="button">View More</a>
+            
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="images/events/foto-maraton.png" class="img-fluid rounded-start imgsize" alt="...">
+                </div>
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h4 class="card-title">Photo Marathon</h4>
+                    <h5 class="card-text">2021</h5>
+                    <p class="card-text"><small>Organized by Pusat Sejarah Brunei</small></p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-warning viewmore" href="events.html#collapse7" role="button">View More</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-7">
-                <img src="images/events/Pasar.jpeg" class="img-fluid rounded-start imgsize" alt="...">
-              </div>
-              <div class="col-md-5">
-                <div class="card-body">
-                  <h4 class="card-title">Pasar Rakyat</h4>
-                  <h5 class="card-text">2021</h5>
-                  <p class="card-text"><small>Organized by Embassy of the Republic of Indonesia</small></p>
-                  <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="events.html#collapse8" role="button">View More</a>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="images/events/Pasar.jpeg" class="img-fluid rounded-start imgsize" alt="...">
+                </div>
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h4 class="card-title">Pasar Rakyat</h4>
+                    <h5 class="card-text">2021</h5>
+                    <p class="card-text"><small>Organized by Embassy of the Republic of Indonesia</small></p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-warning viewmore" href="events.html#collapse8" role="button">View More</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="eventContent2">
+
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="images/events/tiny-lit.jpeg" class="img-fluid rounded-start imgsize" alt="...">
+                </div>
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h4 class="card-title">The Tiny Lit Festival</h4>
+                    <h5 class="card-text">2021</h5>
+                    <p class="card-text"><small>Organized by Heartwite Company</small></p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-warning viewmore" href="events.html#collapse9" role="button">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h1 class="comingsoon">Coming Soon</h1>
+            </div>
+
+            <div>
+              <h1 class="comingsoon">Coming Soon</h1>
+            </div>
+
+            <div>
+              <h1 class="comingsoon">Coming Soon</h1>
+            </div>
+
+          </div>
         </div>
       </div>
 
-      <div class="carousel-item">
-        <div class="eventContent2">
-
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-7">
-                <img src="images/events/tiny-lit.jpeg" class="img-fluid rounded-start imgsize" alt="...">
-              </div>
-              <div class="col-md-5">
-                <div class="card-body">
-                  <h4 class="card-title">The Tiny Lit Festival</h4>
-                  <h5 class="card-text">2021</h5>
-                  <p class="card-text"><small>Organized by Heartwite Company</small></p>
-                  <div class="d-grid gap-2">
-                    <a class="btn btn-warning viewmore" href="events.html#collapse9" role="button">View More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h1 class="comingsoon">Coming Soon</h1>
-          </div>
-
-          <div>
-            <h1 class="comingsoon">Coming Soon</h1>
-          </div>
-
-          <div>
-            <h1 class="comingsoon">Coming Soon</h1>
-          </div>
-
-        </div>
+      <!-- NEXT BUTTON -->
+      <div type="button" data-bs-target="#carouselPreviousEvents" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </div>
-    </div>
-
-    <!-- NEXT BUTTON -->
-    <div type="button" data-bs-target="#carouselPreviousEvents" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
     </div>
   </div>
-</div>
 
 <!-- FEEDBACK -->
 <div class="container m100">
   <h1>Feedbacks</h1>
 </div>
-
+<!-- Feedback content -->
 <div class="container feedback">
 
   <div class="d-flex align-items-center comment">
@@ -788,15 +788,13 @@
       My children enjoyed the activities and I hope there will be more activities for children in the future.
     </div>
   </div>
-
 </div>
 
 <!-- ORGANIZING COMMITTEES -->
-
 <div class="container m100">
   <h1>Organizing Committees</h1>
 </div>
-
+<!-- Organizing Comittees Content -->
 <div class="container committees">
 
   <div type="button" data-bs-toggle="modal" data-bs-target="#carver">
@@ -857,7 +855,7 @@
 
 </div>
 
-<!-- Modal -->
+<!-- Organizing Comittees Modal popup (Bootstrap 3)-->
 <div class="modal fade" id="carver" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -1011,7 +1009,6 @@
 </div>
 
 <!-- SPONSOR SECTION -->
-
 <div class="partnersponsor text-center">
 
   <div class="container">

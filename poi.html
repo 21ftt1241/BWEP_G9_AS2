@@ -10,6 +10,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <script src='js/jquery.zoom.js'></script>
 
   <style type="text/css">
 
@@ -76,459 +77,460 @@
           background-color: #fcd152;
         }
       </style>
-</head>
-<body>
+    </head>
+    <body>
 
-  <!-- Navigation Bar -->
-  <div class="sticky-top" >
-    <div class="container navbar2 sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/icon.png" alt="icon" width="50px" height="50px">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="poi.html">Places of Interest</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+      <!-- Navigation Bar -->
+      <div class="sticky-top" >
+        <div class="container navbar2 sticky-top">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/icon.png" alt="icon" width="50px" height="50px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="poi.html">Places of Interest</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Brunei-Muara -->
+      <div class = "space mt-3">
+        <!-- Accordion body -->
+        <div id="accordion">
+          <h1 id="Destination1">Brunei-Muara<a href=""></a></h1>
+          <div class="text-center">
+
+            <!-- Button Accordion -->
+            <button type="button" class="btn btn-info bg-warning" data-bs-toggle="collapse" data-parent="#accordion" href="#collapse1">Show More</button>
+          </div>
+
+          <!-- Accordion collapse section id -->
+          <div id="collapse1" class="accordion-collapse collapse">
+
+            <div class="mt-4 mb-4">
+              <h2>Omar Ali Saifuddien Mosque</h2>
+            </div>
+            <!-- Carousel -->
+            <!-- https://getbootstrap.com/docs/5.1/components/carousel/ -->
+            <div id="brunei-location1" class="carousel slide" data-bs-interval="false">
+
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="4"></button>
+              </div>
+
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active zoom" id="ex1">
+                  <img src="images\POI\Brunei\LA-1.jpg" alt="Omar Ali Saifuddien Mosque">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LA-2.jpg" alt="Omar Ali Saifuddien Mosque">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LA-3.jpg" alt="Omar Ali Saifuddien Mosque">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LA-4.jpg" alt="Omar Ali Saifuddien Mosque">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LA-5.jpg" alt="Omar Ali Saifuddien Mosque">
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#brunei-location1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#brunei-location1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+
+            <br>
+            <!-- Place 1 text -->
+            <div>
+              <p>
+                From its iconic glistening golden dome and towering marble walls to the majestic and magical lagoon housing the historical Mahligai Barge, its no wonder the Omar 'Ali Saifuddien Mosque is seen as one of the most magnificent mosques in the Asia Pacific. Named after the 28th Sultan, who is known as The Architect of Modern Brunei, you’ll quickly be immersed in its glorious beauty and wealth of history and culture.
+              </p>
+            </div>
+
+            <div class="mt-4 mb-4">
+              <h2>Jerudong Park Playground</h2>
+            </div>
+
+            <!-- Carousel -->
+            <div id="brunei-location2" class="carousel slide" data-bs-interval="false">
+
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#brunei-location2" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#brunei-location2" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#brunei-location2" data-bs-slide-to="2"></button>
+              </div>
+
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images\POI\Brunei\LB-1.jpg" alt="Jerudong Park Playground">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LB-2.jpg" alt="Jerudong Park Playground">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LB-3.jpg" alt="Jerudong Park Playground">
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#brunei-location2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#brunei-location2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+
+            <br>
+            <!-- Place 2 Text -->
+            <div>
+              <p>
+                Go on a rollercoaster ride with friends and enjoy a picnic at the garden, or get on a magical boat ride and spend some time with a special someone. Wet your feet and refresh yourself at the water park, or take a whimsical stroll along the park's magnificent landscapes. And make sure to take a picture at the Diamond Monument before you leave!
+              </p>
+            </div>
+
+            <div class="mt-4 mb-4">
+              <h2>Gadong Night Market</h2>
+            </div>
+
+            <!-- Carousel -->
+            <div id="brunei-location3" class="carousel slide" data-bs-interval="false">
+
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#brunei-location3" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#brunei-location3" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#brunei-location3" data-bs-slide-to="2"></button>
+              </div>
+
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images\POI\Brunei\LC-1.jpg" alt="Gadong Night Market">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LC-2.jpg" alt="Gadong Night Market">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LC-3.jpg" alt="Gadong Night Market">
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#brunei-location3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#brunei-location3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+
+            <br>
+            <div>
+              <p>Officially called Pasar Pelbagai Barangan Gadong, Gadong Night Market is a bustling market in the city centre of Bandar Seri Bagawan. It spans over 5,500 square metres of space and has almost 160 different stalls dedicated to food, drinks, fruits and vegetables, pirated CD's, second-hand clothes, and even electronics.
+              </p>
+            </div>
+
+            <div class="mt-4 mb-4">
+              <h2>Rimba Garden Central</h2>
+            </div>
+
+            <!-- Carousel -->
+            <div id="brunei-location4" class="carousel slide" data-bs-interval="false">
+
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#brunei-location4" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#brunei-location4" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#brunei-location4" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#brunei-location4" data-bs-slide-to="3"></button>
+              </div>
+
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images\POI\Brunei\LD-1.jpg" alt="Rimba Garden Central">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LD-2.jpg" alt="Rimba Garden Central">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LD-3.jpg" alt="Rimba Garden Central">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\POI\Brunei\LD-4.jpg" alt="Rimba Garden Central">
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#brunei-location4" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#brunei-location4" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+
+            <br>
+            <div>
+              <p>Beauty blooms in abundance at Rimba Garden Central. Green thumbs and flower lovers, will find a wonderful assortment of herbs, flowers, herbs and other essentials for gardening. Those who are looking for gardening advice, can trust in their team of horticulturists. It is also a wonderful site for recreation, and many visit to stroll and take pictures of the gorgeous garden landscapes and lush greenery.
+              </p>
+            </div>
+            <p><a href="#Destination1">Go back</a></p>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
-  </div>
 
-  <!-- Brunei-Muara -->
-  <div class = "space mt-3">
-    <!-- Accordion body -->
-    <div id="accordion">
-      <h1 id="Destination1">Brunei-Muara<a href=""></a></h1>
-      <div class="text-center">
+    <!-- Tutong -->
+    <div class = "space mt-3">
+      <!-- Accordion body -->
+      <div id="accordion">
+        <h1 id="Destination1">Tutong<a href=""></a></h1>
+        <div class="text-center">
 
-        <!-- Button Accordion -->
-        <button type="button" class="btn btn-info bg-warning" data-bs-toggle="collapse" data-parent="#accordion" href="#collapse1">Show More</button>
-      </div>
-
-      <!-- Accordion collapse section id -->
-      <div id="collapse1" class="accordion-collapse collapse">
-
-        <div class="mt-4 mb-4">
-        <h2>Omar Ali Saifuddien Mosque</h2>
+          <!-- Button Accordion -->
+          <button type="button" class="btn btn-info bg-warning" data-bs-toggle="collapse" data-parent="#accordion" href="#collapse2">Show More</button>
         </div>
-        <!-- Carousel -->
-        <div id="brunei-location1" class="carousel slide" data-bs-interval="false">
 
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="3"></button>
-            <button type="button" data-bs-target="#brunei-location1" data-bs-slide-to="4"></button>
+        <!-- Accordion collapse section id -->
+        <div id="collapse2" class="accordion-collapse collapse">
+
+          <div class="mt-4 mb-4">
+            <h2>Tasek Merimbun</h2>
+          </div>
+          <!-- Carousel -->
+          <div id="tutong-location1" class="carousel slide" data-bs-interval="false">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\POI\Tutong\LA-1.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Tutong\LA-2.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Tutong\LA-3.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Tutong\LA-4.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Tutong\LA-5.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#tutong-location1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#tutong-location1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
           </div>
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\Brunei\LA-1.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LA-2.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LA-3.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LA-4.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LA-5.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-          </div>
-
-          <!-- Left and right controls/icons -->
+          <br>
+          <!-- Place 1 text -->
           <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#brunei-location1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#brunei-location1" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <br>
-        <!-- Place 1 text -->
-        <div>
-          <p>
-            From its iconic glistening golden dome and towering marble walls to the majestic and magical lagoon housing the historical Mahligai Barge, its no wonder the Omar 'Ali Saifuddien Mosque is seen as one of the most magnificent mosques in the Asia Pacific. Named after the 28th Sultan, who is known as The Architect of Modern Brunei, you’ll quickly be immersed in its glorious beauty and wealth of history and culture.
-          </p>
-        </div>
-
-        <div class="mt-4 mb-4">
-        <h2>Jerudong Park Playground</h2>
-        </div>
-
-        <!-- Carousel -->
-        <div id="brunei-location2" class="carousel slide" data-bs-interval="false">
-
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#brunei-location2" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#brunei-location2" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#brunei-location2" data-bs-slide-to="2"></button>
+            <p>
+              Tasek Merimbun is the largest natural lake all of Brunei Darussalam, and is designated as one of ASEAN's Heritage Parks. Due to the release of tannin from falling leaves, it's waters glisten with a dark sheen. This, alongside its diverse range of flora and fauna, make for an exciting trip for adventurous wildlife enthusiasts. Many birdwatchers come here to catch sightings of various exotic birds. Its perfect for those who wish to make their next Tutong trip a memorable one.
+            </p>
           </div>
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\Brunei\LB-1.jpg" alt="Jerudong Park Playground">
+          <div class="mt-4 mb-4">
+            <h2>Tutong Town</h2>
+          </div>
+
+          <!-- Carousel -->
+          <div id="tutong-location2" class="carousel slide" data-bs-interval="false">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#tutong-location2" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#tutong-location2" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#tutong-location2" data-bs-slide-to="2"></button>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LB-2.jpg" alt="Jerudong Park Playground">
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\POI\tutong\LB-1.jpg" alt="Jerudong Park Playground">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\tutong\LB-2.jpg" alt="Jerudong Park Playground">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\tutong\LB-3.jpg" alt="Jerudong Park Playground">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LB-3.jpg" alt="Jerudong Park Playground">
+
+            <!-- Left and right controls/icons -->
+            <div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#tutong-location2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#tutong-location2" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
           </div>
 
-          <!-- Left and right controls/icons -->
+          <br>
+          <!-- Place 2 Text -->
           <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#brunei-location2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#brunei-location2" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <br>
-        <!-- Place 2 Text -->
-        <div>
-          <p>
-            Go on a rollercoaster ride with friends and enjoy a picnic at the garden, or get on a magical boat ride and spend some time with a special someone. Wet your feet and refresh yourself at the water park, or take a whimsical stroll along the park's magnificent landscapes. And make sure to take a picture at the Diamond Monument before you leave!
-          </p>
-        </div>
-
-        <div class="mt-4 mb-4">
-        <h2>Gadong Night Market</h2>
-        </div>
-
-        <!-- Carousel -->
-        <div id="brunei-location3" class="carousel slide" data-bs-interval="false">
-
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#brunei-location3" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#brunei-location3" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#brunei-location3" data-bs-slide-to="2"></button>
+            <p>
+              Settled between the two busiest districts, Tutong Town is the perfect pitstop for travellers looking for a refreshing change of pace. Stop by to take in the view of the Tutong River and enjoy some 'kopi' time at a kopitiam. Try the Rojak and Pulut Panggang which are some of the more popular dishes you can find here. The locals are friendly, and may have as many stories as the buildings around this dainty time-worn town. Just don’t forget to plan where to go next!
+            </p>
           </div>
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\Brunei\LC-1.jpg" alt="Gadong Night Market">
+          <div class="mt-4 mb-4">
+            <h2>Wasai Bedanu</h2>
+          </div>
+
+          <!-- Carousel -->
+          <div id="tutong-location3" class="carousel slide" data-bs-interval="false">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#tutong-location3" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#tutong-location3" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#tutong-location3" data-bs-slide-to="2"></button>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LC-2.jpg" alt="Gadong Night Market">
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\POI\tutong\LC-1.jpg" alt="Gadong Night Market">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\tutong\LC-2.jpg" alt="Gadong Night Market">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\tutong\LC-3.jpg" alt="Gadong Night Market">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LC-3.jpg" alt="Gadong Night Market">
+
+            <!-- Left and right controls/icons -->
+            <div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#tutong-location3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#tutong-location3" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
           </div>
 
-          <!-- Left and right controls/icons -->
+          <br>
           <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#brunei-location3" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#brunei-location3" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <br>
-        <div>
-          <p>Officially called Pasar Pelbagai Barangan Gadong, Gadong Night Market is a bustling market in the city centre of Bandar Seri Bagawan. It spans over 5,500 square metres of space and has almost 160 different stalls dedicated to food, drinks, fruits and vegetables, pirated CD's, second-hand clothes, and even electronics.
-          </p>
-        </div>
-
-        <div class="mt-4 mb-4">
-        <h2>Rimba Garden Central</h2>
-        </div>
-
-        <!-- Carousel -->
-        <div id="brunei-location4" class="carousel slide" data-bs-interval="false">
-
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#brunei-location4" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#brunei-location4" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#brunei-location4" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#brunei-location4" data-bs-slide-to="3"></button>
+            <p>Go for a morning swim and soak in the cool water as you take in this stunning waterfall! Hidden in the midst of the dense rainforest in Tutong, Wasai Bedanu (which means Bedanu Waterfall), is located about an hour away from the capital, and stands testament as one of the Sultanate’s natural gems. Wasai Bedanu is found in the Bedanu Recreational Park, near Kampong Mungkom and it’s recommended to use a four-wheel drive vehicle due to the road’s rough terrain.
+            </p>
           </div>
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\Brunei\LD-1.jpg" alt="Rimba Garden Central">
+          <div class="mt-4 mb-4">
+            <h2>Seri Kenangan Beach</h2>
+          </div>
+
+          <!-- Carousel -->
+          <div id="tutong-location4" class="carousel slide" data-bs-interval="false">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#tutong-location4" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#tutong-location4" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#tutong-location4" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#tutong-location4" data-bs-slide-to="3"></button>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LD-2.jpg" alt="Rimba Garden Central">
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\POI\tutong\LD-1.jpg" alt="Rimba Garden Central">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\tutong\LD-2.jpg" alt="Rimba Garden Central">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\tutong\LD-3.jpg" alt="Rimba Garden Central">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\tutong\LD-4.jpg" alt="Rimba Garden Central">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LD-3.jpg" alt="Rimba Garden Central">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Brunei\LD-4.jpg" alt="Rimba Garden Central">
+
+            <!-- Left and right controls/icons -->
+            <div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#tutong-location4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#tutong-location4" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
           </div>
 
-          <!-- Left and right controls/icons -->
+          <br>
           <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#brunei-location4" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#brunei-location4" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
+            <p>If you like long walks on the beach, there is no place better than Pantai Seri Kenangan. It sits beside a long spit of land just 5 minutes away from Tutong Town, with the Tutong River on one side, and the South China Sea on the other. It is here where you can feel the sea breeze on your skin, and the warmth of white pristine sands on your feet. Where the gentle tides roll and crash as the flaring hues of the setting sun roll past the horizon. Make some memories here that you won't forget, as Pantai Seri Kenangan's name translates to "Unforgettable Beach".
+            </p>
           </div>
-        </div>
-
-        <br>
-        <div>
-          <p>Beauty blooms in abundance at Rimba Garden Central. Green thumbs and flower lovers, will find a wonderful assortment of herbs, flowers, herbs and other essentials for gardening. Those who are looking for gardening advice, can trust in their team of horticulturists. It is also a wonderful site for recreation, and many visit to stroll and take pictures of the gorgeous garden landscapes and lush greenery.
-          </p>
-        </div>
-          <p><a href="#Destination1">Go back</p></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tutong -->
-  <div class = "space mt-3">
-    <!-- Accordion body -->
-    <div id="accordion">
-      <h1 id="Destination1">Tutong<a href=""></a></h1>
-      <div class="text-center">
-
-        <!-- Button Accordion -->
-        <button type="button" class="btn btn-info bg-warning" data-bs-toggle="collapse" data-parent="#accordion" href="#collapse2">Show More</button>
-      </div>
-
-      <!-- Accordion collapse section id -->
-      <div id="collapse2" class="accordion-collapse collapse">
-
-        <div class="mt-4 mb-4">
-        <h2>Tasek Merimbun</h2>
-        </div>
-        <!-- Carousel -->
-        <div id="tutong-location1" class="carousel slide" data-bs-interval="false">
-
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="3"></button>
-            <button type="button" data-bs-target="#tutong-location1" data-bs-slide-to="4"></button>
-          </div>
-
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\Tutong\LA-1.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Tutong\LA-2.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Tutong\LA-3.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Tutong\LA-4.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Tutong\LA-5.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-          </div>
-
-          <!-- Left and right controls/icons -->
-          <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#tutong-location1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#tutong-location1" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <br>
-        <!-- Place 1 text -->
-        <div>
-          <p>
-            Tasek Merimbun is the largest natural lake all of Brunei Darussalam, and is designated as one of ASEAN's Heritage Parks. Due to the release of tannin from falling leaves, it's waters glisten with a dark sheen. This, alongside its diverse range of flora and fauna, make for an exciting trip for adventurous wildlife enthusiasts. Many birdwatchers come here to catch sightings of various exotic birds. Its perfect for those who wish to make their next Tutong trip a memorable one.
-          </p>
-        </div>
-
-        <div class="mt-4 mb-4">
-        <h2>Tutong Town</h2>
-        </div>
-
-        <!-- Carousel -->
-        <div id="tutong-location2" class="carousel slide" data-bs-interval="false">
-
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#tutong-location2" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#tutong-location2" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#tutong-location2" data-bs-slide-to="2"></button>
-          </div>
-
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\tutong\LB-1.jpg" alt="Jerudong Park Playground">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\tutong\LB-2.jpg" alt="Jerudong Park Playground">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\tutong\LB-3.jpg" alt="Jerudong Park Playground">
-            </div>
-          </div>
-
-          <!-- Left and right controls/icons -->
-          <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#tutong-location2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#tutong-location2" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <br>
-        <!-- Place 2 Text -->
-        <div>
-          <p>
-            Settled between the two busiest districts, Tutong Town is the perfect pitstop for travellers looking for a refreshing change of pace. Stop by to take in the view of the Tutong River and enjoy some 'kopi' time at a kopitiam. Try the Rojak and Pulut Panggang which are some of the more popular dishes you can find here. The locals are friendly, and may have as many stories as the buildings around this dainty time-worn town. Just don’t forget to plan where to go next!
-          </p>
-        </div>
-
-        <div class="mt-4 mb-4">
-        <h2>Wasai Bedanu</h2>
-        </div>
-
-        <!-- Carousel -->
-        <div id="tutong-location3" class="carousel slide" data-bs-interval="false">
-
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#tutong-location3" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#tutong-location3" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#tutong-location3" data-bs-slide-to="2"></button>
-          </div>
-
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\tutong\LC-1.jpg" alt="Gadong Night Market">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\tutong\LC-2.jpg" alt="Gadong Night Market">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\tutong\LC-3.jpg" alt="Gadong Night Market">
-            </div>
-          </div>
-
-          <!-- Left and right controls/icons -->
-          <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#tutong-location3" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#tutong-location3" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <br>
-        <div>
-          <p>Go for a morning swim and soak in the cool water as you take in this stunning waterfall! Hidden in the midst of the dense rainforest in Tutong, Wasai Bedanu (which means Bedanu Waterfall), is located about an hour away from the capital, and stands testament as one of the Sultanate’s natural gems. Wasai Bedanu is found in the Bedanu Recreational Park, near Kampong Mungkom and it’s recommended to use a four-wheel drive vehicle due to the road’s rough terrain.
-          </p>
-        </div>
-
-        <div class="mt-4 mb-4">
-        <h2>Seri Kenangan Beach</h2>
-        </div>
-
-        <!-- Carousel -->
-        <div id="tutong-location4" class="carousel slide" data-bs-interval="false">
-
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#tutong-location4" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#tutong-location4" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#tutong-location4" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#tutong-location4" data-bs-slide-to="3"></button>
-          </div>
-
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\tutong\LD-1.jpg" alt="Rimba Garden Central">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\tutong\LD-2.jpg" alt="Rimba Garden Central">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\tutong\LD-3.jpg" alt="Rimba Garden Central">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\tutong\LD-4.jpg" alt="Rimba Garden Central">
-            </div>
-          </div>
-
-          <!-- Left and right controls/icons -->
-          <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#tutong-location4" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#tutong-location4" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <br>
-        <div>
-          <p>If you like long walks on the beach, there is no place better than Pantai Seri Kenangan. It sits beside a long spit of land just 5 minutes away from Tutong Town, with the Tutong River on one side, and the South China Sea on the other. It is here where you can feel the sea breeze on your skin, and the warmth of white pristine sands on your feet. Where the gentle tides roll and crash as the flaring hues of the setting sun roll past the horizon. Make some memories here that you won't forget, as Pantai Seri Kenangan's name translates to "Unforgettable Beach".
-          </p>
-        </div>
-          <p><a href="#Destination1">Go back</p></a>
+          <p><a href="#Destination1">Go back</a></p>
         </div>
       </div>
     </div>
@@ -549,10 +551,10 @@
       <div id="collapse3" class="accordion-collapse collapse">
 
         <div class="mt-4 mb-4">
-        <h2>Luagan Lalak Recreation Park</h2>
+          <h2>Luagan Lalak Recreation Park</h2>
         </div>
         <!-- Carousel -->
-        <div id="belait-location1-location1" class="carousel slide" data-bs-interval="false">
+        <div id="belait-location1" class="carousel slide" data-bs-interval="false">
 
           <!-- Indicators/dots -->
           <div class="carousel-indicators">
@@ -602,11 +604,11 @@
         </div>
 
         <div class="mt-4 mb-4">
-        <h2>Billionth Barrel Monument</h2>
+          <h2>Billionth Barrel Monument</h2>
         </div>
 
         <!-- Carousel -->
-        <div id="tutong-location2" class="carousel slide" data-bs-interval="false">
+        <div id="belait-location2" class="carousel slide" data-bs-interval="false">
 
           <!-- Indicators/dots -->
           <div class="carousel-indicators">
@@ -630,10 +632,10 @@
 
           <!-- Left and right controls/icons -->
           <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#tutong-location2" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#belait-location2" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#tutong-location2" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#belait-location2" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
           </div>
@@ -648,7 +650,7 @@
         </div>
 
         <div class="mt-4 mb-4">
-        <h2>Anduki Recreational Park</h2>
+          <h2>Anduki Recreational Park</h2>
         </div>
 
         <!-- Carousel -->
@@ -690,7 +692,7 @@
           <p>Opened in 1992 in commemoration of the silver jubilee of Sultan Haji Hassanal Bolkiah, the Anduki Recreational Park serves as the perfect getaway for the public and tourists alike. Set upon a wonderous view of a glittering skyblue lake, the park offers a peaceful place for an afternoon gathering, or excite your day with some radio-controlled boat racing.
           </p>
         </div>
-        <p><a href="#Destination1">Go back</p></a>
+        <p><a href="#Destination1">Go back</a></p>
       </div>
     </div>
   </div>
@@ -710,152 +712,152 @@
       <div id="collapse4" class="accordion-collapse collapse">
 
         <div class="mt-4 mb-4">
-        <h2>Ulu Temburong National Park</h2>
-        <!-- Carousel -->
-        <div id="temburong-location1" class="carousel slide" data-bs-interval="false">
+          <h2>Ulu Temburong National Park</h2>
+          <!-- Carousel -->
+          <div id="temburong-location1" class="carousel slide" data-bs-interval="false">
 
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#temburong-location1-location1" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#temburong-location1" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#temburong-location1" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#temburong-location1" data-bs-slide-to="3"></button>
-            <button type="button" data-bs-target="#temburong-location1" data-bs-slide-to="4"></button>
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#temburong-location1-location1" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#temburong-location1" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#temburong-location1" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#temburong-location1" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#temburong-location1" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\POI\Temburong\LA-1.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Temburong\LA-2.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Temburong\LA-3.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Temburong\LA-4.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Temburong\LA-5.jpg" alt="Omar Ali Saifuddien Mosque">
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#temburong-location1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#temburong-location1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
           </div>
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\Temburong\LA-1.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Temburong\LA-2.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Temburong\LA-3.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Temburong\LA-4.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-            <div class="carousel-item">
-              <img src="images\POI\Temburong\LA-5.jpg" alt="Omar Ali Saifuddien Mosque">
-            </div>
-          </div>
-
-          <!-- Left and right controls/icons -->
+          <br>
+          <!-- Place 1 text -->
           <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#temburong-location1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#temburong-location1" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <br>
-        <!-- Place 1 text -->
-        <div>
-          <p>
-            Ulu Temburong National Park is home to centuries-old evergreen that has seen the passing of time through the ages. In fact, 80% of Brunei is pure rainforest and home to numerous kinds of wildlife such as the elusive hornbill and over 400 kinds of butterflies.
-          </p>
-        </div>
-
-        <div class="mt-4 mb-4">
-        <h2>Sumbiling Eco Village</h2>
-        </div>
-
-        <!-- Carousel -->
-        <div id="temburong-location2" class="carousel slide" data-bs-interval="false">
-
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#temburong-location2" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#temburong-location2" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#temburong-location2" data-bs-slide-to="2"></button>
+            <p>
+              Ulu Temburong National Park is home to centuries-old evergreen that has seen the passing of time through the ages. In fact, 80% of Brunei is pure rainforest and home to numerous kinds of wildlife such as the elusive hornbill and over 400 kinds of butterflies.
+            </p>
           </div>
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\Temburong\LB-1.jpg" alt="Jerudong Park Playground">
+          <div class="mt-4 mb-4">
+            <h2>Sumbiling Eco Village</h2>
+          </div>
+
+          <!-- Carousel -->
+          <div id="temburong-location2" class="carousel slide" data-bs-interval="false">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#temburong-location2" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#temburong-location2" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#temburong-location2" data-bs-slide-to="2"></button>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Temburong\LB-2.jpg" alt="Jerudong Park Playground">
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\POI\Temburong\LB-1.jpg" alt="Jerudong Park Playground">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Temburong\LB-2.jpg" alt="Jerudong Park Playground">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Temburong\LB-3.jpg" alt="Jerudong Park Playground">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Temburong\LB-3.jpg" alt="Jerudong Park Playground">
+
+            <!-- Left and right controls/icons -->
+            <div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#temburong-location2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#temburong-location2" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
           </div>
 
-          <!-- Left and right controls/icons -->
+          <br>
+          <!-- Place 2 Text -->
           <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#temburong-location2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#temburong-location2" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-
-        <br>
-        <!-- Place 2 Text -->
-        <div>
-          <p>
-            Lounge lazily in a hammock as the sounds of a thriving rainforest fill the still air. A jungle camp with basic amenities at a riverside location, the Sumbiling Eco Village entails delicious Iban cuisine, exciting outdoor activities like inner tubing and night/dawn walks that allows you to connect with nature. 
-          </p>
-        </div>
-
-        <div class="mt-4 mb-4">
-        <h2>Sultan Haji Omar 'Ali Saifuddien Bridge</h2>
-        </div>
-
-        <!-- Carousel -->
-        <div id="temburong-location3" class="carousel slide" data-bs-interval="false">
-
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#temburong-location3" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#temburong-location3" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#temburong-location3" data-bs-slide-to="2"></button>
+            <p>
+              Lounge lazily in a hammock as the sounds of a thriving rainforest fill the still air. A jungle camp with basic amenities at a riverside location, the Sumbiling Eco Village entails delicious Iban cuisine, exciting outdoor activities like inner tubing and night/dawn walks that allows you to connect with nature. 
+            </p>
           </div>
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\POI\Temburong\LC-1.jpg" alt="Gadong Night Market">
+          <div class="mt-4 mb-4">
+            <h2>Sultan Haji Omar 'Ali Saifuddien Bridge</h2>
+          </div>
+
+          <!-- Carousel -->
+          <div id="temburong-location3" class="carousel slide" data-bs-interval="false">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#temburong-location3" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#temburong-location3" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#temburong-location3" data-bs-slide-to="2"></button>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Temburong\LC-2.jpg" alt="Gadong Night Market">
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\POI\Temburong\LC-1.jpg" alt="Gadong Night Market">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Temburong\LC-2.jpg" alt="Gadong Night Market">
+              </div>
+              <div class="carousel-item">
+                <img src="images\POI\Temburong\LC-3.jpg" alt="Gadong Night Market">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="images\POI\Temburong\LC-3.jpg" alt="Gadong Night Market">
+
+            <!-- Left and right controls/icons -->
+            <div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#temburong-location3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#temburong-location3" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
           </div>
 
-          <!-- Left and right controls/icons -->
+          <br>
           <div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#temburong-location3" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#temburong-location3" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
+            <p>Stretching at a remarkable 30km long, Sultan Haji Omar 'Ali Saifuddien Bridge becoming one of the longest bridges in Southeast Asia. The dual-carriageway bridge was opened in March 2020, with the purpose of connecting the Temburong district to the mainland. The cross-district trip brings travellers on a picturesque ride so if you're in the mood to catch sunsets, take a drive on this new bridge.
+            </p>
           </div>
         </div>
-
-        <br>
-        <div>
-          <p>Stretching at a remarkable 30km long, Sultan Haji Omar 'Ali Saifuddien Bridge becoming one of the longest bridges in Southeast Asia. The dual-carriageway bridge was opened in March 2020, with the purpose of connecting the Temburong district to the mainland. The cross-district trip brings travellers on a picturesque ride so if you're in the mood to catch sunsets, take a drive on this new bridge.
-          </p>
-        </div>
-        </div>
-          <p><a href="#Destination1">Go back</p></a>
-        </div>
+        <p><a href="#Destination1">Go back</a></p>
       </div>
     </div>
   </div>
+</div>
 
-
+</body>
 </html>

@@ -76,7 +76,7 @@
   </style>
 </head>
 <body>
-  <!-- Feedback Modal (Bootstrap and JQuery)-->
+  <!-- Feedback Modal (Bootstrap feature 6 and JQuery feature 3 for modal)-->
   <!-- https://adnan-tech.com/feedback-pop-up-bootstrap-modal-javascript-php-mysql/ -->
   <div class="modal fade" id="feedbackModal">
     <div class="modal-dialog">
@@ -92,7 +92,7 @@
 
             <label for="recipient-name" class="col-form-label">Your Rating:</label>
 
-            <!-- Star Rating (JQuery)-->
+            <!-- Star Rating (JQuery feature 4)-->
             <!-- https://adnan-tech.com/feedback-pop-up-bootstrap-modal-javascript-php-mysql/ -->
             <div class='starrr'></div>
 
@@ -107,8 +107,8 @@
             <div class="mb-2">
               <div class="has-valid">
                 <label for="recipient-name" class="col-form-label">Email:</label>
-                <input type="text" class="form-control" id="recipient-name" required>
-                <div class="invalid-feedback">Please Enter Your Email</div>
+                <input type="email" class="form-control" id="recipient-name" required>
+                <div class="invalid-feedback">Please Enter Valid Email</div>
               </div>
             </div>
 
@@ -124,10 +124,9 @@
           <input type="submit" class="btn btn-primary pull-right mr-3" value="Submit" />
         </form>
       </div>
-
     </div>
   </div>
-</div>
+
 
 <!-- Navigation Bar (Bootstrap) -->
 <div class="sticky-top" >
@@ -165,6 +164,7 @@
 </div>
 
 <!-- Contact Us + Interactive Map (Bootstrap, JQuery, Popper and Google map API)-->
+<!-- Bootsrap feature 7 & JQuery Feature 5 for form validation -->
 <!-- https://colorlib.com/wp/template/contact-form-06/ -->
 <section class="ftco-section">
   <div class="container">
@@ -275,13 +275,6 @@
     </div>
   </div>
 </section>
-
-<!-- Link -->
-  <!-- <div class="ml-5">
-    <h4>Code source</h4>
-    <p>Feedback Modal + Star Rating (Bootstrap & 2 JQuery): <a href="https://adnan-tech.com/feedback-pop-up-bootstrap-modal-javascript-php-mysql/" target=" ">link</a></p>
-    <p>Contact Us Form + Interactive Map (Bootstrap & JQuery): <a href="https://colorlib.com/wp/template/contact-form-06/" target=" ">link</a></p>
-  </div> -->
 
   <!-- JS function for Feedback Star Rating-->
   <script type="text/javascript">
