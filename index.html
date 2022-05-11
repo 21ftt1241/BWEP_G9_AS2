@@ -21,6 +21,12 @@
   <link rel="stylesheet" type="text/css" href="css/evo-calendar.midnight-blue.min.css">
   <link rel="stylesheet" type="text/css" href="css/evo-calendar.royal-navy.min.css">
 
+  <script src="js/jquery.min.js"></script>
+
+  <script src="js/whatsapp-chat.js"></script>
+  
+  <link rel="stylesheet" href="css/whatsapp-chat.css" />
+
   <style>
     @font-face {
       font-family: "breakfast";
@@ -313,10 +319,20 @@
         #testCalendar{
           width: 70%;
         }
+
+        #chat_bubble{
+          position: absolute;
+          z-index: 5;
+        }
   </style>
 
 </head>
 <body>
+
+  <!-- Floating chat bubble (New JQuery Feature 1)-->
+  <!-- https://www.jqueryscript.net/social-media/floating-whatsapp-chat.html -->
+  <div id="chat_bubble"></div>
+
 
   <!-- NAVIGATION BAR (Bootstrap feature 1)-->
   <!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
@@ -358,8 +374,6 @@
   <div id="banner">
     <img src="images/landingpage.png" id="banner" class="img-fluid" alt="...">
   </div>
-
-
 
   <!-- CAROUSEL UPCOMING EVENTS (Bootstrap feature 2)-->
   <!-- https://getbootstrap.com/docs/5.1/components/carousel/ -->
@@ -608,7 +622,9 @@
 <div class="container mt-5">
     <h1>Events Calendar</h1>
   </div>
-  <!-- calendar -->
+
+  <!-- Evo Jquery Calendar (New JQuery Feature 2)-->
+  <!-- https://edlynvillegas.github.io/evo-calendar/ -->
   <div class="console-log">
     <div class="log-content">
       <div class="--noshadow" id="testCalendar"></div>
@@ -1121,6 +1137,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="js/evo-calendar.min.js"></script>
 
+<!-- Evo calendar with JQuery scripts -->
 <script type="text/javascript">
   $(document).ready(function() {
     $('#testCalendar').evoCalendar({
@@ -1181,5 +1198,33 @@
 
 
 </script>
+
+<!-- Chatt bubble function -->
+<script type="text/javascript">
+    whatsappchat.multipleUser(
+  {
+    selector: '#chat_bubble',
+    users: [
+      {
+        name:'Mercia Catherina',
+        phone: '674842069',
+        designation: 'Promotions Coordinator',
+        image : 'images/avatars/avatar8.jpg'
+      },
+      {
+        name:'Jaron Manish',
+        phone: '674842069',
+        designation: 'Officials Co-ordinator',
+        image: 'images/avatars/avatar9.jpg'
+
+      },
+    ],
+    headerMessage: 'Feel free to ask any questions in <strong>WhatsApp</strong>',
+    chatBoxMessage: 'Team replies in a minute',
+    color: '#25D366',
+  }
+);
+</script>
+
 </body>
 </html>
